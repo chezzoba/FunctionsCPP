@@ -5,7 +5,11 @@ using namespace std;
 
 struct Stepfunction {
     Array c, r, e;
-    const string s = "z";
+    string s;
+
+    Stepfunction (string symbol = "z") {
+        s = symbol;
+    };
 
     void load( Array coefs, Array roots, Array exps ) {
             for (int i = 0; i < coefs.size; i++) {
