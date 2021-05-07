@@ -47,7 +47,6 @@ struct Stepfunction {
                 if (e[i] == 0 && r[i] == 0) {
                     nc.push(c[i] + p);
                     found = true;
-                    break;
                 } else {
                     nc.push(c[i]);
                 };
