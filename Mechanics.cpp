@@ -40,7 +40,7 @@ struct Stepfunction {
         };
 
         Stepfunction operator+(double p) {
-            Stepfunction newsf;
+            Stepfunction newsf(s);
             Array nc;
             bool found = false;
             for (int i=0; i<e.size; i++) {
@@ -58,7 +58,7 @@ struct Stepfunction {
         };
 
         Stepfunction derivative( ) {
-            Stepfunction d;
+            Stepfunction d(s);
             int l = this->c.size;
             for (int i = 0; i < l; i++) {
                 d.push(c[i] * e[i], r[i], e[i] - 1);
@@ -66,7 +66,7 @@ struct Stepfunction {
             return d;
         };
         Stepfunction integral( double C = 0 ) {
-            Stepfunction ing;
+            Stepfunction ing(s);
             int l = this->c.size;
             for (int i = 0; i < l; i++) {
                 ing.push(c[i] / ( e[i] + 1 ), r[i], e[i] + 1);
