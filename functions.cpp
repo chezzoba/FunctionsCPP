@@ -1,5 +1,7 @@
 #include <iostream>
-#include "Polynomial.cpp"
+#include "makedic.cpp"
+
+using namespace std;
 
 int main ( ) {
     Array<int> arr;
@@ -47,15 +49,5 @@ int main ( ) {
     dict.add("cool", 100);
     dict["bad"] = 42;
     dict.print();
-
-    Polynomial squared(1, 1);
-    Array<double> coefs;
-    coefs.push(0); coefs.push(0); coefs.push(1);
-    squared.load(coefs);
-    cout << (- squared / 2)(3) << endl;
-
-    Polynomial x(1, 1); x.push(0); x.push(1);
-    (squared.integral(0).integral(0)).print();
-    cout << squared.dintegral(-1, 1) << endl;
     return EXIT_SUCCESS;
 };

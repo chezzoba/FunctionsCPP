@@ -10,13 +10,12 @@ double pow (double base, double exp) {
     return prod;
 };
 
-template <typename T>
 class Array {
-    T *list = new T[0];
+    double *list = new double[0];
     public:
         int size = 0;
-        void push(T item) {
-            T *newlist = new T[size + 1];
+        void push(double item) {
+            double *newlist = new double[size + 1];
             for (int i=0; i < size; i++) {
                 newlist[i] = list[i];
             };
@@ -25,21 +24,21 @@ class Array {
             list = newlist;
         };
     
-        T& operator[] (int index) {
+        double& operator[] (int index) {
             return list[index];
         };
 
-        Array<T> slice (int s, int e) {
-            Array<T> newarr;
+        Array slice (int s, int e) {
+            Array newarr;
             for (int i = s; i < e; i++) {
                 newarr.push(list[i]);
             }
             return newarr;
         }
 
-        T pop(int index) {
-            T *newlist = new T[--size];
-            T val;
+        double pop(int index) {
+            double *newlist = new double[--size];
+            double val;
             for (int i=0; i < size + 1; i++) {
                 if (i != index) {
                     newlist[i] = list[i];
@@ -56,7 +55,7 @@ class Array {
             return val;
         }
 
-        int remove (T value) {
+        int remove (double value) {
             int index;
             for (int i=0; i < size + 1; i++) {
                 if (list[i] == value) {
@@ -79,17 +78,16 @@ class Array {
             return joined;
         }
 
-        template <typename R> 
-        Array<R> map (R (*f) (T) ) {
-            Array<R> retarr;
+        Array map (double (*f) (double) ) {
+            Array retarr;
             for (int i=0; i<size; i++) {
                 retarr.push(f(list[i]));
             }
             return retarr;
         }
 
-        Array<T> filter (bool (*f) (T, int) ) {
-            Array<T> retarr;
+        Array filter (bool (*f) (double, int) ) {
+            Array retarr;
             for (int i=0; i<size; i++) {
                 if (f(list[i], i) == true) {
                     retarr.push(list[i]);
@@ -98,8 +96,8 @@ class Array {
             return retarr;
         }
 
-        T reduce (T (*f) (T, T, int)) {
-            T agg = 0;
+        double reduce (double (*f) (double, double, int)) {
+            double agg = 0;
             for (int i=0; i<size; i++) {
                 agg = f(list[i], agg, i);
             }
@@ -111,51 +109,23 @@ class Array {
                 cout << ", " << list[i];
             } cout << "}\n";
         }
-        void forEach(void (*f) (T)) {
+        void forEach(void (*f) (double)) {
             for (int i=0; i<size; i++) {
                 f(list[i]);
             };
         };
-        T max () {
-            return this->reduce([](T li, T agg, int i) {return li > agg ? li : agg;});
+        double max () {
+            return this->reduce([](double li, double agg, int i) {return li > agg ? li : agg;});
         };
-        T min () {
-            return this->reduce([](T li, T agg, int i) {return li < agg ? li : agg;});
+        double min () {
+            return this->reduce([](double li, double agg, int i) {return li < agg ? li : agg;});
         };
-};
-
-template <typename T>
-class Dictionary {
-    Array<string> keys;
-    Array<T> values;
-    public:
-        void add(string key, T value) {
-            int index;
-            for (int i=0; i<keys.size; i++) {
-                if (key == keys[i]) {
-                    index = keys.remove(key);
-                    values.pop(index);
-                }
-            }
-            keys.push(key);
-            values.push(value);
-        }
-
-        T& operator[] (string key) {
-            for (int i=0; i<keys.size; i++) {
-                if (key == keys[i]) {
-                    return values[i];
-                }
-            }
-            return values[values.size+1];
-
-        }
-
-        void print( ) {
-            cout << "{'" << keys[0] << "': " << values[0];
-            for (int i=1; i<keys.size; i++) {
-                cout << ", '" << keys[i] << "': " << values[i];
-            }
-            cout << "}\n";
-        }
+        int in ( double item ) {
+            for (int i = 0; i < this->size; i++) {
+                if (item == list[i]) {
+                    return i;
+                };
+            };
+            return -1;
+        };
 };
