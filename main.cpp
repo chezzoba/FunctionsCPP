@@ -11,8 +11,7 @@ int main ( ) {
         roots.push(5*i-1);
         exps.push(i);
     }
-    string symbol="y";
-    Polynomial powers(1, 1, symbol);
+    Polynomial powers(1, 1, "y");
     powers.load(coefs);
     powers.print();
     powers.derivative().print();
