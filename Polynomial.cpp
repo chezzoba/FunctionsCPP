@@ -1,3 +1,4 @@
+#include <sstream>
 #include <iostream>
 #include "array.cpp"
 
@@ -41,6 +42,26 @@ struct Polynomial  {
         };
         printf("%f*(%f*%s)^%d", arr[arr.size-1], f, s.c_str(), arr.size-1);
         cout << ( c == 1 ? "" : "]") << "\n";
+    };
+
+    string str ( ) {
+        stringstream out;
+        if (c != 1) {
+            out << c << "*[";
+        } else {
+            out << (c == 1 ? "" : "[");
+        };
+        if (arr[0] != 0) {
+            out << arr[0] << " + ";
+        };
+        for (int i=1; i<arr.size-1; i++) {
+            if (arr[i] != 0) {
+                out << arr[i] << "*(" << f << "*" << s << ")^" << i << " + ";
+            };
+        };
+        out << arr[arr.size - 1] << "*(" << f << "*" << s << ")^" << arr.size - 1;
+        out << ( c == 1 ? "" : "]") << "\n";
+        return out.str();
     };
 
     Polynomial derivative() {

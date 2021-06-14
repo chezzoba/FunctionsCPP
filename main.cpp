@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int main ( ) {
+int main (int nargs, char** args ) {
     //Polynomial squared(1, 1);
     Array coefs, roots, exps;
     for (int i=0; i<5; i++) {
@@ -15,6 +15,7 @@ int main ( ) {
     powers.load(coefs);
     powers.print();
     powers.derivative().print();
+    cout << powers.derivative().str() << endl;
     cout << endl << endl;
 
     Stepfunction My;

@@ -27,6 +27,17 @@ struct Stepfunction {
             };
             cout << c[l-1] << "[ " << s << (r[l-1] >= 0 ? " +" : " ") << r[l-1] << " ]^" << e[l-1] << endl;
         };
+
+        string str( ) {
+            stringstream out;
+            int l = e.size;
+            for (int i = 0; i < e.size-1; i++) {
+                out << c[i] << "*[ " << s << (r[i] >= 0 ? " +" : " ") << r[i] << " ]^" << e[i] << (c[i+1] >= 0 ? " +" : " ");
+            };
+            out << c[l-1] << "[ " << s << (r[l-1] >= 0 ? " +" : " ") << r[l-1] << " ]^" << e[l-1] << endl;
+            return out.str();
+        };
+
         double operator()(double x) {
             double sum = 0;
             for (int i=0; i<c.size; i++) {
