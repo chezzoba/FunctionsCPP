@@ -27,21 +27,7 @@ struct Polynomial  {
         };
     };
     void print() {
-        if (c != 1) {
-            cout << c << "*[";
-        } else {
-            cout << (c == 1 ? "" : "[");
-        };
-        if (arr[0] != 0) {
-            cout << arr[0] << " + ";
-        };
-        for (int i=1; i<arr.size-1; i++) {
-            if (arr[i] != 0) {
-                printf("%f*(%f*%s)^%d + ", arr[i], f, s.c_str(), i);
-            };
-        };
-        printf("%f*(%f*%s)^%d", arr[arr.size-1], f, s.c_str(), arr.size-1);
-        cout << ( c == 1 ? "" : "]") << "\n";
+        cout << this->str() << "\n";
     };
 
     string str ( ) {
