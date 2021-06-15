@@ -1,7 +1,7 @@
 # distutils: language = c++
 from libcpp.string cimport string
 
-cdef extern from "Mechanics.hpp":
+cdef extern from "src/Mechanics.hpp":
     cdef cppclass Stepfunction:
         Stepfunction(string) except +
         Stepfunction() except +
@@ -16,7 +16,7 @@ cdef extern from "Mechanics.hpp":
         Stepfunction& div "operator/"(double)
         string str()
 
-cdef extern from "Mechanics.hpp":
+cdef extern from "src/Mechanics.hpp":
     cdef cppclass Polynomial:
         Polynomial(double, double, string) except +
         Polynomial(double, double) except +
@@ -121,6 +121,7 @@ cdef class Poly:
     def __mul__(Poly a, double b):
         return Poly.create(a.poly.div(b))
     __rmul__ = __mul__
+    __repr__ = __str__
 
     def __truediv__(Poly a, double b):
         return Poly.create(a.poly.div(b))

@@ -3913,7 +3913,7 @@ static PyObject *__pyx_pf_9Functions_4Poly_22__mul__(struct __pyx_obj_9Functions
  *     def __mul__(Poly a, double b):
  *         return Poly.create(a.poly.div(b))             # <<<<<<<<<<<<<<
  *     __rmul__ = __mul__
- * 
+ *     __repr__ = __str__
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_1 = __pyx_f_9Functions_4Poly_create(__pyx_v_a->poly.operator/(__pyx_v_b)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 122, __pyx_L1_error)
@@ -3941,8 +3941,8 @@ static PyObject *__pyx_pf_9Functions_4Poly_22__mul__(struct __pyx_obj_9Functions
   return __pyx_r;
 }
 
-/* "Functions.pyx":125
- *     __rmul__ = __mul__
+/* "Functions.pyx":126
+ *     __repr__ = __str__
  * 
  *     def __truediv__(Poly a, double b):             # <<<<<<<<<<<<<<
  *         return Poly.create(a.poly.div(b))
@@ -3959,7 +3959,7 @@ static PyObject *__pyx_pw_9Functions_4Poly_25__truediv__(PyObject *__pyx_v_a, Py
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__truediv__ (wrapper)", 0);
   assert(__pyx_arg_b); {
-    __pyx_v_b = __pyx_PyFloat_AsDouble(__pyx_arg_b); if (unlikely((__pyx_v_b == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 125, __pyx_L3_error)
+    __pyx_v_b = __pyx_PyFloat_AsDouble(__pyx_arg_b); if (unlikely((__pyx_v_b == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 126, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -3967,7 +3967,7 @@ static PyObject *__pyx_pw_9Functions_4Poly_25__truediv__(PyObject *__pyx_v_a, Py
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_a), __pyx_ptype_9Functions_Poly, 1, "a", 0))) __PYX_ERR(1, 125, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_a), __pyx_ptype_9Functions_Poly, 1, "a", 0))) __PYX_ERR(1, 126, __pyx_L1_error)
   __pyx_r = __pyx_pf_9Functions_4Poly_24__truediv__(((struct __pyx_obj_9Functions_Poly *)__pyx_v_a), ((double)__pyx_v_b));
 
   /* function exit code */
@@ -3988,20 +3988,20 @@ static PyObject *__pyx_pf_9Functions_4Poly_24__truediv__(struct __pyx_obj_9Funct
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__truediv__", 0);
 
-  /* "Functions.pyx":126
+  /* "Functions.pyx":127
  * 
  *     def __truediv__(Poly a, double b):
  *         return Poly.create(a.poly.div(b))             # <<<<<<<<<<<<<<
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_9Functions_4Poly_create(__pyx_v_a->poly.operator/(__pyx_v_b)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 126, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_9Functions_4Poly_create(__pyx_v_a->poly.operator/(__pyx_v_b)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 127, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "Functions.pyx":125
- *     __rmul__ = __mul__
+  /* "Functions.pyx":126
+ *     __repr__ = __str__
  * 
  *     def __truediv__(Poly a, double b):             # <<<<<<<<<<<<<<
  *         return Poly.create(a.poly.div(b))
@@ -5338,12 +5338,25 @@ if (!__Pyx_RefNanny) {
  *     def __mul__(Poly a, double b):
  *         return Poly.create(a.poly.div(b))
  *     __rmul__ = __mul__             # <<<<<<<<<<<<<<
+ *     __repr__ = __str__
  * 
- *     def __truediv__(Poly a, double b):
  */
   __Pyx_GetNameInClass(__pyx_t_2, (PyObject *)__pyx_ptype_9Functions_Poly, __pyx_n_s_mul); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 123, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   if (PyDict_SetItem((PyObject *)__pyx_ptype_9Functions_Poly->tp_dict, __pyx_n_s_rmul, __pyx_t_2) < 0) __PYX_ERR(1, 123, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  PyType_Modified(__pyx_ptype_9Functions_Poly);
+
+  /* "Functions.pyx":124
+ *         return Poly.create(a.poly.div(b))
+ *     __rmul__ = __mul__
+ *     __repr__ = __str__             # <<<<<<<<<<<<<<
+ * 
+ *     def __truediv__(Poly a, double b):
+ */
+  __Pyx_GetNameInClass(__pyx_t_2, (PyObject *)__pyx_ptype_9Functions_Poly, __pyx_n_s_str); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 124, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  if (PyDict_SetItem((PyObject *)__pyx_ptype_9Functions_Poly->tp_dict, __pyx_n_s_repr, __pyx_t_2) < 0) __PYX_ERR(1, 124, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   PyType_Modified(__pyx_ptype_9Functions_Poly);
 
