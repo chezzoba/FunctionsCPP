@@ -21,11 +21,7 @@ struct Stepfunction {
             };
         };
         void print( ) {
-            int l = e.size;
-            for (int i = 0; i < e.size-1; i++) {
-                cout << c[i] << "*[ " << s << (r[i] >= 0 ? " +" : " ") << r[i] << " ]^" << e[i] << (c[i+1] >= 0 ? " +" : " ");
-            };
-            cout << c[l-1] << "[ " << s << (r[l-1] >= 0 ? " +" : " ") << r[l-1] << " ]^" << e[l-1] << endl;
+            cout << this->str() << endl;
         };
 
         string str( ) {
@@ -34,7 +30,7 @@ struct Stepfunction {
             for (int i = 0; i < e.size-1; i++) {
                 out << c[i] << "*[ " << s << (r[i] >= 0 ? " +" : " ") << r[i] << " ]^" << e[i] << (c[i+1] >= 0 ? " +" : " ");
             };
-            out << c[l-1] << "[ " << s << (r[l-1] >= 0 ? " +" : " ") << r[l-1] << " ]^" << e[l-1] << endl;
+            out << c[l-1] << "[ " << s << (r[l-1] >= 0 ? " +" : " ") << r[l-1] << " ]^" << e[l-1];
             return out.str();
         };
 
@@ -48,6 +44,33 @@ struct Stepfunction {
 
         void push(double coef, double root, double exp) {
             c.push(coef); r.push(root); e.push(exp);
+        };
+
+        Stepfunction operator+ (Stepfunction b) {
+            Stepfunction f(s);
+            f.load(this->c, this->r, this->e);
+            f.load(b.c, b.r, b.e);
+            return f;
+        };
+
+        Stepfunction operator* (double a) {
+            Stepfunction f(s);
+            Array newc;
+            for (int i = 0; i < c.size; i++) {
+                newc.push(c[i] * a);
+            };
+            f.load(newc, r, e);
+            return f;
+        };
+
+        Stepfunction operator/ (double a) {
+            return *this * (1 / a);
+        };
+
+        Stepfunction operator-() {
+            Stepfunction newf(this->s);
+            newf.load(c.map([](double co){return -co;}), r, e);
+            return newf;
         };
 
         Stepfunction operator+(double p) {
@@ -81,7 +104,7 @@ struct Stepfunction {
             for (int i = 0; i < l; i++) {
                 ing.push(c[i] / ( e[i] + 1 ), r[i], e[i] + 1);
             };
-            return ing + C;
+            ing.push(C, 0, 0);
+            return ing;
         };
 };
-

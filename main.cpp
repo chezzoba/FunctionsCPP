@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Mechanics.cpp"
+#include "Mechanics.hpp"
 
 using namespace std;
 
@@ -23,5 +23,6 @@ int main (int nargs, char** args ) {
     My.print();
     (My+5).print();
     My.integral(-7).print();
+    (-My).print();
     return EXIT_SUCCESS;
 }
