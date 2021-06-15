@@ -16,8 +16,25 @@ cdef extern from "Mechanics.hpp":
         Stepfunction& div "operator/"(double)
         string str()
 
+cdef extern from "Mechanics.hpp":
+    cdef cppclass Polynomial:
+        Polynomial(double, double, string) except +
+        Polynomial(double, double) except +
+        Polynomial() except +
+        void push(double)
+        void print()
+        double& get "operator()"(double)
+        Polynomial derivative()
+        Polynomial integral(double)
+        Polynomial operator+(Polynomial)
+        Polynomial operator-()
+        Polynomial& mul "operator*"(double)
+        Polynomial& div "operator/"(double)
+        string str()
+
+
 cdef class StepFunction:
-    cdef Stepfunction sf, othersf
+    cdef Stepfunction sf
     def __cinit__(self, list arr = [[0]*3], str symbol = "z"):
         self.sf = Stepfunction(symbol.encode())
         for c, r, e in arr:
@@ -62,3 +79,48 @@ cdef class StepFunction:
 
     def __truediv__(StepFunction a, double b):
         return StepFunction.create(a.sf.div(b))
+
+cdef class Poly:
+    cdef Polynomial poly
+    def __cinit__(self, list arr = [], double freq = 1, double coef = 1, str symbol = "z"):
+        self.poly = Polynomial(freq, coef, symbol.encode())
+        for t in arr:
+            self.poly.push(t)
+    def push(self, double term):
+        self.poly.push(term)
+    def print(self):
+        self.poly.print()
+    def __call__(self, double z):
+        return self.poly.get(z)
+    def __str__(self):
+        return self.poly.str().decode('utf-8')
+    __repr__ = __str__
+
+    @staticmethod
+    cdef create(Polynomial polyn):
+        fn = Poly()
+        fn.poly = polyn
+        return fn
+
+    def __add__(Poly left, Poly right):
+        return Poly.create(left.poly + right.poly)
+
+    __radd__ = __add__
+
+    def derivative(self):
+        return Poly.create(self.poly.derivative())
+    
+    def integral(self, double C = 0):
+        return Poly.create(self.poly.integral(C))
+    def __neg__(self):
+        return Poly.create(-self.poly)
+    def __sub__(Poly left, Poly right):
+        return Poly.create(left.poly + (-right.poly))
+    def __rsub__(Poly left, Poly right):
+        return Poly.create(-left.poly + right.poly)
+    def __mul__(Poly a, double b):
+        return Poly.create(a.poly.div(b))
+    __rmul__ = __mul__
+
+    def __truediv__(Poly a, double b):
+        return Poly.create(a.poly.div(b))
