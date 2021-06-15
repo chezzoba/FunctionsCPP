@@ -74,7 +74,7 @@ cdef class StepFunction:
     def __rsub__(StepFunction left, StepFunction right):
         return StepFunction.create(-left.sf + right.sf)
     def __mul__(StepFunction a, double b):
-        return StepFunction.create(a.sf.div(b))
+        return StepFunction.create(a.sf.mul(b))
     __rmul__ = __mul__
 
     def __truediv__(StepFunction a, double b):
@@ -119,7 +119,7 @@ cdef class Poly:
     def __rsub__(Poly left, Poly right):
         return Poly.create(-left.poly + right.poly)
     def __mul__(Poly a, double b):
-        return Poly.create(a.poly.div(b))
+        return Poly.create(a.poly.mul(b))
     __rmul__ = __mul__
     __repr__ = __str__
 
