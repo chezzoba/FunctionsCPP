@@ -14,6 +14,9 @@ cdef extern from "src/Mechanics.hpp":
         Stepfunction operator-()
         Stepfunction& mul "operator*"(double)
         Stepfunction& div "operator/"(double)
+        double optimize(double, double)
+        double max(double, double)
+        double min(double, double)
         string str()
 
 cdef extern from "src/Mechanics.hpp":
@@ -30,6 +33,9 @@ cdef extern from "src/Mechanics.hpp":
         Polynomial operator-()
         Polynomial& mul "operator*"(double)
         Polynomial& div "operator/"(double)
+        double optimize(double, double)
+        double max(double, double)
+        double min(double, double)
         string str()
 
 
@@ -77,6 +83,11 @@ cdef class StepFunction:
         return StepFunction.create(a.sf.mul(b))
     __rmul__ = __mul__
 
+    def max(self, double a, double b):
+        return self.sf.max(a, b)
+    def min(self, double a, double b):
+        return self.sf.min(a, b)
+
     def __truediv__(StepFunction a, double b):
         return StepFunction.create(a.sf.div(b))
 
@@ -120,6 +131,11 @@ cdef class Poly:
         return Poly.create(-left.poly + right.poly)
     def __mul__(Poly a, double b):
         return Poly.create(a.poly.mul(b))
+    def max(self, double a, double b):
+        return self.poly.max(a, b)
+    def min(self, double a, double b):
+        return self.poly.min(a, b)
+
     __rmul__ = __mul__
     __repr__ = __str__
 

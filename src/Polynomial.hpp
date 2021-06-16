@@ -92,6 +92,31 @@ struct Polynomial  {
         newpol.load(arr);
         return newpol;
     };
+
+    double optimize ( double a, double b ) {
+            const double gold = 1.61803398875;
+            double beta = 1 / gold;
+            double alpha = 1 - beta;
+            double xl, xr;
+            while ( abs(b - a) > 1e-8 ) {
+                xl = a + alpha*(b-a);
+                xr = a + beta*(b-a);
+                if ( (*this)(xl) < (*this)(xr) ) {
+                    b = xr;
+                } else {
+                    a = xl;
+                }
+            };
+            return (a + b) / 2;
+        };
+        double max (double a, double b) {
+            Polynomial negative = -(*this);
+            return (*this)(negative.optimize(a, b));
+        };
+
+        double min (double a, double b) {
+            return (*this)(this->optimize(a, b));
+        };
 };
 
 Polynomial operator+(double a, Polynomial poly) {

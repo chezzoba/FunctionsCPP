@@ -17,7 +17,6 @@ int main (int nargs, char** args ) {
     powers.derivative().print();
     cout << powers.derivative().str() << endl;
     cout << endl << endl;
-
     Stepfunction My;
     My.load(coefs, roots, exps);
     My.print();

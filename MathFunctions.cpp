@@ -618,8 +618,8 @@ static CYTHON_INLINE float __PYX_NAN() {
   #endif
 #endif
 
-#define __PYX_HAVE__FunctionsCPP__MathFunctions
-#define __PYX_HAVE_API__FunctionsCPP__MathFunctions
+#define __PYX_HAVE__MathFunctions
+#define __PYX_HAVE_API__MathFunctions
 /* Early includes */
 #include <string.h>
 #include "ios"
@@ -841,39 +841,39 @@ static const char *__pyx_f[] = {
 };
 
 /*--- Type declarations ---*/
-struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction;
-struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly;
+struct __pyx_obj_13MathFunctions_StepFunction;
+struct __pyx_obj_13MathFunctions_Poly;
 
-/* "FunctionsCPP/MathFunctions.pyx":36
+/* "MathFunctions.pyx":42
  * 
  * 
  * cdef class StepFunction:             # <<<<<<<<<<<<<<
  *     cdef Stepfunction sf
  *     def __cinit__(self, list arr = [[0]*3], str symbol = "z"):
  */
-struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction {
+struct __pyx_obj_13MathFunctions_StepFunction {
   PyObject_HEAD
-  struct __pyx_vtabstruct_12FunctionsCPP_13MathFunctions_StepFunction *__pyx_vtab;
+  struct __pyx_vtabstruct_13MathFunctions_StepFunction *__pyx_vtab;
   Stepfunction sf;
 };
 
 
-/* "FunctionsCPP/MathFunctions.pyx":83
+/* "MathFunctions.pyx":94
  *         return StepFunction.create(a.sf.div(b))
  * 
  * cdef class Poly:             # <<<<<<<<<<<<<<
  *     cdef Polynomial poly
  *     def __cinit__(self, list arr = [], double freq = 1, double coef = 1, str symbol = "z"):
  */
-struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly {
+struct __pyx_obj_13MathFunctions_Poly {
   PyObject_HEAD
-  struct __pyx_vtabstruct_12FunctionsCPP_13MathFunctions_Poly *__pyx_vtab;
+  struct __pyx_vtabstruct_13MathFunctions_Poly *__pyx_vtab;
   Polynomial poly;
 };
 
 
 
-/* "FunctionsCPP/MathFunctions.pyx":36
+/* "MathFunctions.pyx":42
  * 
  * 
  * cdef class StepFunction:             # <<<<<<<<<<<<<<
@@ -881,13 +881,13 @@ struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly {
  *     def __cinit__(self, list arr = [[0]*3], str symbol = "z"):
  */
 
-struct __pyx_vtabstruct_12FunctionsCPP_13MathFunctions_StepFunction {
+struct __pyx_vtabstruct_13MathFunctions_StepFunction {
   PyObject *(*create)(Stepfunction);
 };
-static struct __pyx_vtabstruct_12FunctionsCPP_13MathFunctions_StepFunction *__pyx_vtabptr_12FunctionsCPP_13MathFunctions_StepFunction;
+static struct __pyx_vtabstruct_13MathFunctions_StepFunction *__pyx_vtabptr_13MathFunctions_StepFunction;
 
 
-/* "FunctionsCPP/MathFunctions.pyx":83
+/* "MathFunctions.pyx":94
  *         return StepFunction.create(a.sf.div(b))
  * 
  * cdef class Poly:             # <<<<<<<<<<<<<<
@@ -895,10 +895,10 @@ static struct __pyx_vtabstruct_12FunctionsCPP_13MathFunctions_StepFunction *__py
  *     def __cinit__(self, list arr = [], double freq = 1, double coef = 1, str symbol = "z"):
  */
 
-struct __pyx_vtabstruct_12FunctionsCPP_13MathFunctions_Poly {
+struct __pyx_vtabstruct_13MathFunctions_Poly {
   PyObject *(*create)(Polynomial);
 };
-static struct __pyx_vtabstruct_12FunctionsCPP_13MathFunctions_Poly *__pyx_vtabptr_12FunctionsCPP_13MathFunctions_Poly;
+static struct __pyx_vtabstruct_13MathFunctions_Poly *__pyx_vtabptr_13MathFunctions_Poly;
 
 /* --- Runtime support code (head) --- */
 /* Refnanny.proto */
@@ -1303,29 +1303,31 @@ static int __Pyx_check_binary_version(void);
 /* InitStrings.proto */
 static int __Pyx_InitStrings(__Pyx_StringTabEntry *t);
 
-static PyObject *__pyx_f_12FunctionsCPP_13MathFunctions_12StepFunction_create(Stepfunction __pyx_v_sfn); /* proto*/
-static PyObject *__pyx_f_12FunctionsCPP_13MathFunctions_4Poly_create(Polynomial __pyx_v_polyn); /* proto*/
+static PyObject *__pyx_f_13MathFunctions_12StepFunction_create(Stepfunction __pyx_v_sfn); /* proto*/
+static PyObject *__pyx_f_13MathFunctions_4Poly_create(Polynomial __pyx_v_polyn); /* proto*/
 
 /* Module declarations from 'libc.string' */
 
 /* Module declarations from 'libcpp.string' */
 
-/* Module declarations from 'FunctionsCPP.MathFunctions' */
-static PyTypeObject *__pyx_ptype_12FunctionsCPP_13MathFunctions_StepFunction = 0;
-static PyTypeObject *__pyx_ptype_12FunctionsCPP_13MathFunctions_Poly = 0;
+/* Module declarations from 'MathFunctions' */
+static PyTypeObject *__pyx_ptype_13MathFunctions_StepFunction = 0;
+static PyTypeObject *__pyx_ptype_13MathFunctions_Poly = 0;
 static std::string __pyx_convert_string_from_py_std__in_string(PyObject *); /*proto*/
 static CYTHON_INLINE PyObject *__pyx_convert_PyObject_string_to_py_std__in_string(std::string const &); /*proto*/
 static CYTHON_INLINE PyObject *__pyx_convert_PyUnicode_string_to_py_std__in_string(std::string const &); /*proto*/
 static CYTHON_INLINE PyObject *__pyx_convert_PyStr_string_to_py_std__in_string(std::string const &); /*proto*/
 static CYTHON_INLINE PyObject *__pyx_convert_PyBytes_string_to_py_std__in_string(std::string const &); /*proto*/
 static CYTHON_INLINE PyObject *__pyx_convert_PyByteArray_string_to_py_std__in_string(std::string const &); /*proto*/
-#define __Pyx_MODULE_NAME "FunctionsCPP.MathFunctions"
-extern int __pyx_module_is_main_FunctionsCPP__MathFunctions;
-int __pyx_module_is_main_FunctionsCPP__MathFunctions = 0;
+#define __Pyx_MODULE_NAME "MathFunctions"
+extern int __pyx_module_is_main_MathFunctions;
+int __pyx_module_is_main_MathFunctions = 0;
 
-/* Implementation of 'FunctionsCPP.MathFunctions' */
+/* Implementation of 'MathFunctions' */
 static PyObject *__pyx_builtin_TypeError;
 static const char __pyx_k_C[] = "C";
+static const char __pyx_k_a[] = "a";
+static const char __pyx_k_b[] = "b";
 static const char __pyx_k_z[] = "z";
 static const char __pyx_k_add[] = "__add__";
 static const char __pyx_k_arr[] = "arr";
@@ -1358,8 +1360,10 @@ static PyObject *__pyx_n_s_C;
 static PyObject *__pyx_n_s_Poly;
 static PyObject *__pyx_n_s_StepFunction;
 static PyObject *__pyx_n_s_TypeError;
+static PyObject *__pyx_n_s_a;
 static PyObject *__pyx_n_s_add;
 static PyObject *__pyx_n_s_arr;
+static PyObject *__pyx_n_s_b;
 static PyObject *__pyx_n_s_cline_in_traceback;
 static PyObject *__pyx_n_s_coef;
 static PyObject *__pyx_n_s_exp;
@@ -1384,38 +1388,42 @@ static PyObject *__pyx_n_s_symbol;
 static PyObject *__pyx_n_s_test;
 static PyObject *__pyx_n_s_z;
 static PyObject *__pyx_n_u_z;
-static int __pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction___cinit__(struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *__pyx_v_self, PyObject *__pyx_v_arr, PyObject *__pyx_v_symbol); /* proto */
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_2push(struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *__pyx_v_self, double __pyx_v_coef, double __pyx_v_root, double __pyx_v_exp); /* proto */
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_4print(struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_6__call__(struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *__pyx_v_self, double __pyx_v_z); /* proto */
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_8__str__(struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_10__add__(struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *__pyx_v_left, struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *__pyx_v_right); /* proto */
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_12derivative(struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_14integral(struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *__pyx_v_self, double __pyx_v_C); /* proto */
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_16__neg__(struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_18__sub__(struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *__pyx_v_left, struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *__pyx_v_right); /* proto */
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_20__rsub__(struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *__pyx_v_left, struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *__pyx_v_right); /* proto */
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_22__mul__(struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *__pyx_v_a, double __pyx_v_b); /* proto */
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_24__truediv__(struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *__pyx_v_a, double __pyx_v_b); /* proto */
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_26__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_28__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
-static int __pyx_pf_12FunctionsCPP_13MathFunctions_4Poly___cinit__(struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *__pyx_v_self, PyObject *__pyx_v_arr, double __pyx_v_freq, double __pyx_v_coef, PyObject *__pyx_v_symbol); /* proto */
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_2push(struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *__pyx_v_self, double __pyx_v_term); /* proto */
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_4print(struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_6__call__(struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *__pyx_v_self, double __pyx_v_z); /* proto */
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_8__str__(struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_10__add__(struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *__pyx_v_left, struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *__pyx_v_right); /* proto */
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_12derivative(struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_14integral(struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *__pyx_v_self, double __pyx_v_C); /* proto */
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_16__neg__(struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_18__sub__(struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *__pyx_v_left, struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *__pyx_v_right); /* proto */
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_20__rsub__(struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *__pyx_v_left, struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *__pyx_v_right); /* proto */
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_22__mul__(struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *__pyx_v_a, double __pyx_v_b); /* proto */
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_24__truediv__(struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *__pyx_v_a, double __pyx_v_b); /* proto */
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_26__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_28__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
-static PyObject *__pyx_tp_new_12FunctionsCPP_13MathFunctions_StepFunction(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
-static PyObject *__pyx_tp_new_12FunctionsCPP_13MathFunctions_Poly(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static int __pyx_pf_13MathFunctions_12StepFunction___cinit__(struct __pyx_obj_13MathFunctions_StepFunction *__pyx_v_self, PyObject *__pyx_v_arr, PyObject *__pyx_v_symbol); /* proto */
+static PyObject *__pyx_pf_13MathFunctions_12StepFunction_2push(struct __pyx_obj_13MathFunctions_StepFunction *__pyx_v_self, double __pyx_v_coef, double __pyx_v_root, double __pyx_v_exp); /* proto */
+static PyObject *__pyx_pf_13MathFunctions_12StepFunction_4print(struct __pyx_obj_13MathFunctions_StepFunction *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_13MathFunctions_12StepFunction_6__call__(struct __pyx_obj_13MathFunctions_StepFunction *__pyx_v_self, double __pyx_v_z); /* proto */
+static PyObject *__pyx_pf_13MathFunctions_12StepFunction_8__str__(struct __pyx_obj_13MathFunctions_StepFunction *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_13MathFunctions_12StepFunction_10__add__(struct __pyx_obj_13MathFunctions_StepFunction *__pyx_v_left, struct __pyx_obj_13MathFunctions_StepFunction *__pyx_v_right); /* proto */
+static PyObject *__pyx_pf_13MathFunctions_12StepFunction_12derivative(struct __pyx_obj_13MathFunctions_StepFunction *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_13MathFunctions_12StepFunction_14integral(struct __pyx_obj_13MathFunctions_StepFunction *__pyx_v_self, double __pyx_v_C); /* proto */
+static PyObject *__pyx_pf_13MathFunctions_12StepFunction_16__neg__(struct __pyx_obj_13MathFunctions_StepFunction *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_13MathFunctions_12StepFunction_18__sub__(struct __pyx_obj_13MathFunctions_StepFunction *__pyx_v_left, struct __pyx_obj_13MathFunctions_StepFunction *__pyx_v_right); /* proto */
+static PyObject *__pyx_pf_13MathFunctions_12StepFunction_20__rsub__(struct __pyx_obj_13MathFunctions_StepFunction *__pyx_v_left, struct __pyx_obj_13MathFunctions_StepFunction *__pyx_v_right); /* proto */
+static PyObject *__pyx_pf_13MathFunctions_12StepFunction_22__mul__(struct __pyx_obj_13MathFunctions_StepFunction *__pyx_v_a, double __pyx_v_b); /* proto */
+static PyObject *__pyx_pf_13MathFunctions_12StepFunction_24max(struct __pyx_obj_13MathFunctions_StepFunction *__pyx_v_self, double __pyx_v_a, double __pyx_v_b); /* proto */
+static PyObject *__pyx_pf_13MathFunctions_12StepFunction_26min(struct __pyx_obj_13MathFunctions_StepFunction *__pyx_v_self, double __pyx_v_a, double __pyx_v_b); /* proto */
+static PyObject *__pyx_pf_13MathFunctions_12StepFunction_28__truediv__(struct __pyx_obj_13MathFunctions_StepFunction *__pyx_v_a, double __pyx_v_b); /* proto */
+static PyObject *__pyx_pf_13MathFunctions_12StepFunction_30__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_13MathFunctions_StepFunction *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_13MathFunctions_12StepFunction_32__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_13MathFunctions_StepFunction *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
+static int __pyx_pf_13MathFunctions_4Poly___cinit__(struct __pyx_obj_13MathFunctions_Poly *__pyx_v_self, PyObject *__pyx_v_arr, double __pyx_v_freq, double __pyx_v_coef, PyObject *__pyx_v_symbol); /* proto */
+static PyObject *__pyx_pf_13MathFunctions_4Poly_2push(struct __pyx_obj_13MathFunctions_Poly *__pyx_v_self, double __pyx_v_term); /* proto */
+static PyObject *__pyx_pf_13MathFunctions_4Poly_4print(struct __pyx_obj_13MathFunctions_Poly *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_13MathFunctions_4Poly_6__call__(struct __pyx_obj_13MathFunctions_Poly *__pyx_v_self, double __pyx_v_z); /* proto */
+static PyObject *__pyx_pf_13MathFunctions_4Poly_8__str__(struct __pyx_obj_13MathFunctions_Poly *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_13MathFunctions_4Poly_10__add__(struct __pyx_obj_13MathFunctions_Poly *__pyx_v_left, struct __pyx_obj_13MathFunctions_Poly *__pyx_v_right); /* proto */
+static PyObject *__pyx_pf_13MathFunctions_4Poly_12derivative(struct __pyx_obj_13MathFunctions_Poly *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_13MathFunctions_4Poly_14integral(struct __pyx_obj_13MathFunctions_Poly *__pyx_v_self, double __pyx_v_C); /* proto */
+static PyObject *__pyx_pf_13MathFunctions_4Poly_16__neg__(struct __pyx_obj_13MathFunctions_Poly *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_13MathFunctions_4Poly_18__sub__(struct __pyx_obj_13MathFunctions_Poly *__pyx_v_left, struct __pyx_obj_13MathFunctions_Poly *__pyx_v_right); /* proto */
+static PyObject *__pyx_pf_13MathFunctions_4Poly_20__rsub__(struct __pyx_obj_13MathFunctions_Poly *__pyx_v_left, struct __pyx_obj_13MathFunctions_Poly *__pyx_v_right); /* proto */
+static PyObject *__pyx_pf_13MathFunctions_4Poly_22__mul__(struct __pyx_obj_13MathFunctions_Poly *__pyx_v_a, double __pyx_v_b); /* proto */
+static PyObject *__pyx_pf_13MathFunctions_4Poly_24max(struct __pyx_obj_13MathFunctions_Poly *__pyx_v_self, double __pyx_v_a, double __pyx_v_b); /* proto */
+static PyObject *__pyx_pf_13MathFunctions_4Poly_26min(struct __pyx_obj_13MathFunctions_Poly *__pyx_v_self, double __pyx_v_a, double __pyx_v_b); /* proto */
+static PyObject *__pyx_pf_13MathFunctions_4Poly_28__truediv__(struct __pyx_obj_13MathFunctions_Poly *__pyx_v_a, double __pyx_v_b); /* proto */
+static PyObject *__pyx_pf_13MathFunctions_4Poly_30__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_13MathFunctions_Poly *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_13MathFunctions_4Poly_32__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_13MathFunctions_Poly *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
+static PyObject *__pyx_tp_new_13MathFunctions_StepFunction(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_tp_new_13MathFunctions_Poly(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_int_0;
 static PyObject *__pyx_k_;
 static PyObject *__pyx_k__4;
@@ -1425,7 +1433,7 @@ static PyObject *__pyx_tuple__5;
 static PyObject *__pyx_tuple__6;
 /* Late includes */
 
-/* "FunctionsCPP/MathFunctions.pyx":38
+/* "MathFunctions.pyx":44
  * cdef class StepFunction:
  *     cdef Stepfunction sf
  *     def __cinit__(self, list arr = [[0]*3], str symbol = "z"):             # <<<<<<<<<<<<<<
@@ -1434,8 +1442,8 @@ static PyObject *__pyx_tuple__6;
  */
 
 /* Python wrapper */
-static int __pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static int __pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static int __pyx_pw_13MathFunctions_12StepFunction_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static int __pyx_pw_13MathFunctions_12StepFunction_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_arr = 0;
   PyObject *__pyx_v_symbol = 0;
   int __pyx_lineno = 0;
@@ -1475,7 +1483,7 @@ static int __pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_1__cinit__(PyO
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(1, 38, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(1, 44, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -1492,15 +1500,15 @@ static int __pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_1__cinit__(PyO
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__cinit__", 0, 0, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 38, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__cinit__", 0, 0, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 44, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("FunctionsCPP.MathFunctions.StepFunction.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("MathFunctions.StepFunction.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return -1;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_arr), (&PyList_Type), 1, "arr", 1))) __PYX_ERR(1, 38, __pyx_L1_error)
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_symbol), (&PyUnicode_Type), 1, "symbol", 1))) __PYX_ERR(1, 38, __pyx_L1_error)
-  __pyx_r = __pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction___cinit__(((struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *)__pyx_v_self), __pyx_v_arr, __pyx_v_symbol);
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_arr), (&PyList_Type), 1, "arr", 1))) __PYX_ERR(1, 44, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_symbol), (&PyUnicode_Type), 1, "symbol", 1))) __PYX_ERR(1, 44, __pyx_L1_error)
+  __pyx_r = __pyx_pf_13MathFunctions_12StepFunction___cinit__(((struct __pyx_obj_13MathFunctions_StepFunction *)__pyx_v_self), __pyx_v_arr, __pyx_v_symbol);
 
   /* function exit code */
   goto __pyx_L0;
@@ -1511,7 +1519,7 @@ static int __pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_1__cinit__(PyO
   return __pyx_r;
 }
 
-static int __pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction___cinit__(struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *__pyx_v_self, PyObject *__pyx_v_arr, PyObject *__pyx_v_symbol) {
+static int __pyx_pf_13MathFunctions_12StepFunction___cinit__(struct __pyx_obj_13MathFunctions_StepFunction *__pyx_v_self, PyObject *__pyx_v_arr, PyObject *__pyx_v_symbol) {
   PyObject *__pyx_v_c = NULL;
   PyObject *__pyx_v_r = NULL;
   PyObject *__pyx_v_e = NULL;
@@ -1535,7 +1543,7 @@ static int __pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction___cinit__(stru
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
-  /* "FunctionsCPP/MathFunctions.pyx":39
+  /* "MathFunctions.pyx":45
  *     cdef Stepfunction sf
  *     def __cinit__(self, list arr = [[0]*3], str symbol = "z"):
  *         self.sf = Stepfunction(symbol.encode())             # <<<<<<<<<<<<<<
@@ -1544,21 +1552,21 @@ static int __pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction___cinit__(stru
  */
   if (unlikely(__pyx_v_symbol == Py_None)) {
     PyErr_Format(PyExc_AttributeError, "'NoneType' object has no attribute '%.30s'", "encode");
-    __PYX_ERR(1, 39, __pyx_L1_error)
+    __PYX_ERR(1, 45, __pyx_L1_error)
   }
-  __pyx_t_1 = PyUnicode_AsEncodedString(__pyx_v_symbol, NULL, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 39, __pyx_L1_error)
+  __pyx_t_1 = PyUnicode_AsEncodedString(__pyx_v_symbol, NULL, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 45, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __pyx_convert_string_from_py_std__in_string(__pyx_t_1); if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 39, __pyx_L1_error)
+  __pyx_t_2 = __pyx_convert_string_from_py_std__in_string(__pyx_t_1); if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 45, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   try {
     __pyx_t_3 = Stepfunction(__pyx_t_2);
   } catch(...) {
     __Pyx_CppExn2PyErr();
-    __PYX_ERR(1, 39, __pyx_L1_error)
+    __PYX_ERR(1, 45, __pyx_L1_error)
   }
   __pyx_v_self->sf = __pyx_t_3;
 
-  /* "FunctionsCPP/MathFunctions.pyx":40
+  /* "MathFunctions.pyx":46
  *     def __cinit__(self, list arr = [[0]*3], str symbol = "z"):
  *         self.sf = Stepfunction(symbol.encode())
  *         for c, r, e in arr:             # <<<<<<<<<<<<<<
@@ -1567,15 +1575,15 @@ static int __pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction___cinit__(stru
  */
   if (unlikely(__pyx_v_arr == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not iterable");
-    __PYX_ERR(1, 40, __pyx_L1_error)
+    __PYX_ERR(1, 46, __pyx_L1_error)
   }
   __pyx_t_1 = __pyx_v_arr; __Pyx_INCREF(__pyx_t_1); __pyx_t_4 = 0;
   for (;;) {
     if (__pyx_t_4 >= PyList_GET_SIZE(__pyx_t_1)) break;
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-    __pyx_t_5 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_4); __Pyx_INCREF(__pyx_t_5); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(1, 40, __pyx_L1_error)
+    __pyx_t_5 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_4); __Pyx_INCREF(__pyx_t_5); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(1, 46, __pyx_L1_error)
     #else
-    __pyx_t_5 = PySequence_ITEM(__pyx_t_1, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 40, __pyx_L1_error)
+    __pyx_t_5 = PySequence_ITEM(__pyx_t_1, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 46, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     #endif
     if ((likely(PyTuple_CheckExact(__pyx_t_5))) || (PyList_CheckExact(__pyx_t_5))) {
@@ -1584,7 +1592,7 @@ static int __pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction___cinit__(stru
       if (unlikely(size != 3)) {
         if (size > 3) __Pyx_RaiseTooManyValuesError(3);
         else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-        __PYX_ERR(1, 40, __pyx_L1_error)
+        __PYX_ERR(1, 46, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
@@ -1600,17 +1608,17 @@ static int __pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction___cinit__(stru
       __Pyx_INCREF(__pyx_t_7);
       __Pyx_INCREF(__pyx_t_8);
       #else
-      __pyx_t_6 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 40, __pyx_L1_error)
+      __pyx_t_6 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 46, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
-      __pyx_t_7 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 40, __pyx_L1_error)
+      __pyx_t_7 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 46, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
-      __pyx_t_8 = PySequence_ITEM(sequence, 2); if (unlikely(!__pyx_t_8)) __PYX_ERR(1, 40, __pyx_L1_error)
+      __pyx_t_8 = PySequence_ITEM(sequence, 2); if (unlikely(!__pyx_t_8)) __PYX_ERR(1, 46, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
       #endif
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     } else {
       Py_ssize_t index = -1;
-      __pyx_t_9 = PyObject_GetIter(__pyx_t_5); if (unlikely(!__pyx_t_9)) __PYX_ERR(1, 40, __pyx_L1_error)
+      __pyx_t_9 = PyObject_GetIter(__pyx_t_5); if (unlikely(!__pyx_t_9)) __PYX_ERR(1, 46, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_9);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       __pyx_t_10 = Py_TYPE(__pyx_t_9)->tp_iternext;
@@ -1620,7 +1628,7 @@ static int __pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction___cinit__(stru
       __Pyx_GOTREF(__pyx_t_7);
       index = 2; __pyx_t_8 = __pyx_t_10(__pyx_t_9); if (unlikely(!__pyx_t_8)) goto __pyx_L5_unpacking_failed;
       __Pyx_GOTREF(__pyx_t_8);
-      if (__Pyx_IternextUnpackEndCheck(__pyx_t_10(__pyx_t_9), 3) < 0) __PYX_ERR(1, 40, __pyx_L1_error)
+      if (__Pyx_IternextUnpackEndCheck(__pyx_t_10(__pyx_t_9), 3) < 0) __PYX_ERR(1, 46, __pyx_L1_error)
       __pyx_t_10 = NULL;
       __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
       goto __pyx_L6_unpacking_done;
@@ -1628,7 +1636,7 @@ static int __pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction___cinit__(stru
       __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
       __pyx_t_10 = NULL;
       if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-      __PYX_ERR(1, 40, __pyx_L1_error)
+      __PYX_ERR(1, 46, __pyx_L1_error)
       __pyx_L6_unpacking_done:;
     }
     __Pyx_XDECREF_SET(__pyx_v_c, __pyx_t_6);
@@ -1638,19 +1646,19 @@ static int __pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction___cinit__(stru
     __Pyx_XDECREF_SET(__pyx_v_e, __pyx_t_8);
     __pyx_t_8 = 0;
 
-    /* "FunctionsCPP/MathFunctions.pyx":41
+    /* "MathFunctions.pyx":47
  *         self.sf = Stepfunction(symbol.encode())
  *         for c, r, e in arr:
  *             self.sf.push(c, r, e)             # <<<<<<<<<<<<<<
  *     def push(self, double coef, double root, double exp):
  *         self.sf.push(coef, root, exp)
  */
-    __pyx_t_11 = __pyx_PyFloat_AsDouble(__pyx_v_c); if (unlikely((__pyx_t_11 == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 41, __pyx_L1_error)
-    __pyx_t_12 = __pyx_PyFloat_AsDouble(__pyx_v_r); if (unlikely((__pyx_t_12 == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 41, __pyx_L1_error)
-    __pyx_t_13 = __pyx_PyFloat_AsDouble(__pyx_v_e); if (unlikely((__pyx_t_13 == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 41, __pyx_L1_error)
+    __pyx_t_11 = __pyx_PyFloat_AsDouble(__pyx_v_c); if (unlikely((__pyx_t_11 == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 47, __pyx_L1_error)
+    __pyx_t_12 = __pyx_PyFloat_AsDouble(__pyx_v_r); if (unlikely((__pyx_t_12 == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 47, __pyx_L1_error)
+    __pyx_t_13 = __pyx_PyFloat_AsDouble(__pyx_v_e); if (unlikely((__pyx_t_13 == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 47, __pyx_L1_error)
     __pyx_v_self->sf.push(__pyx_t_11, __pyx_t_12, __pyx_t_13);
 
-    /* "FunctionsCPP/MathFunctions.pyx":40
+    /* "MathFunctions.pyx":46
  *     def __cinit__(self, list arr = [[0]*3], str symbol = "z"):
  *         self.sf = Stepfunction(symbol.encode())
  *         for c, r, e in arr:             # <<<<<<<<<<<<<<
@@ -1660,7 +1668,7 @@ static int __pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction___cinit__(stru
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "FunctionsCPP/MathFunctions.pyx":38
+  /* "MathFunctions.pyx":44
  * cdef class StepFunction:
  *     cdef Stepfunction sf
  *     def __cinit__(self, list arr = [[0]*3], str symbol = "z"):             # <<<<<<<<<<<<<<
@@ -1678,7 +1686,7 @@ static int __pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction___cinit__(stru
   __Pyx_XDECREF(__pyx_t_7);
   __Pyx_XDECREF(__pyx_t_8);
   __Pyx_XDECREF(__pyx_t_9);
-  __Pyx_AddTraceback("FunctionsCPP.MathFunctions.StepFunction.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("MathFunctions.StepFunction.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_c);
@@ -1688,7 +1696,7 @@ static int __pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction___cinit__(stru
   return __pyx_r;
 }
 
-/* "FunctionsCPP/MathFunctions.pyx":42
+/* "MathFunctions.pyx":48
  *         for c, r, e in arr:
  *             self.sf.push(c, r, e)
  *     def push(self, double coef, double root, double exp):             # <<<<<<<<<<<<<<
@@ -1697,8 +1705,8 @@ static int __pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction___cinit__(stru
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_3push(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_3push(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_13MathFunctions_12StepFunction_3push(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyObject *__pyx_pw_13MathFunctions_12StepFunction_3push(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   double __pyx_v_coef;
   double __pyx_v_root;
   double __pyx_v_exp;
@@ -1733,17 +1741,17 @@ static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_3push(Py
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_root)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("push", 1, 3, 3, 1); __PYX_ERR(1, 42, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("push", 1, 3, 3, 1); __PYX_ERR(1, 48, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_exp)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("push", 1, 3, 3, 2); __PYX_ERR(1, 42, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("push", 1, 3, 3, 2); __PYX_ERR(1, 48, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "push") < 0)) __PYX_ERR(1, 42, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "push") < 0)) __PYX_ERR(1, 48, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 3) {
       goto __pyx_L5_argtuple_error;
@@ -1752,31 +1760,31 @@ static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_3push(Py
       values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
       values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
     }
-    __pyx_v_coef = __pyx_PyFloat_AsDouble(values[0]); if (unlikely((__pyx_v_coef == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 42, __pyx_L3_error)
-    __pyx_v_root = __pyx_PyFloat_AsDouble(values[1]); if (unlikely((__pyx_v_root == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 42, __pyx_L3_error)
-    __pyx_v_exp = __pyx_PyFloat_AsDouble(values[2]); if (unlikely((__pyx_v_exp == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 42, __pyx_L3_error)
+    __pyx_v_coef = __pyx_PyFloat_AsDouble(values[0]); if (unlikely((__pyx_v_coef == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 48, __pyx_L3_error)
+    __pyx_v_root = __pyx_PyFloat_AsDouble(values[1]); if (unlikely((__pyx_v_root == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 48, __pyx_L3_error)
+    __pyx_v_exp = __pyx_PyFloat_AsDouble(values[2]); if (unlikely((__pyx_v_exp == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 48, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("push", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 42, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("push", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 48, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("FunctionsCPP.MathFunctions.StepFunction.push", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("MathFunctions.StepFunction.push", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_2push(((struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *)__pyx_v_self), __pyx_v_coef, __pyx_v_root, __pyx_v_exp);
+  __pyx_r = __pyx_pf_13MathFunctions_12StepFunction_2push(((struct __pyx_obj_13MathFunctions_StepFunction *)__pyx_v_self), __pyx_v_coef, __pyx_v_root, __pyx_v_exp);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_2push(struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *__pyx_v_self, double __pyx_v_coef, double __pyx_v_root, double __pyx_v_exp) {
+static PyObject *__pyx_pf_13MathFunctions_12StepFunction_2push(struct __pyx_obj_13MathFunctions_StepFunction *__pyx_v_self, double __pyx_v_coef, double __pyx_v_root, double __pyx_v_exp) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("push", 0);
 
-  /* "FunctionsCPP/MathFunctions.pyx":43
+  /* "MathFunctions.pyx":49
  *             self.sf.push(c, r, e)
  *     def push(self, double coef, double root, double exp):
  *         self.sf.push(coef, root, exp)             # <<<<<<<<<<<<<<
@@ -1785,7 +1793,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_2push(st
  */
   __pyx_v_self->sf.push(__pyx_v_coef, __pyx_v_root, __pyx_v_exp);
 
-  /* "FunctionsCPP/MathFunctions.pyx":42
+  /* "MathFunctions.pyx":48
  *         for c, r, e in arr:
  *             self.sf.push(c, r, e)
  *     def push(self, double coef, double root, double exp):             # <<<<<<<<<<<<<<
@@ -1800,7 +1808,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_2push(st
   return __pyx_r;
 }
 
-/* "FunctionsCPP/MathFunctions.pyx":44
+/* "MathFunctions.pyx":50
  *     def push(self, double coef, double root, double exp):
  *         self.sf.push(coef, root, exp)
  *     def print(self):             # <<<<<<<<<<<<<<
@@ -1809,24 +1817,24 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_2push(st
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_5print(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_5print(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_13MathFunctions_12StepFunction_5print(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_13MathFunctions_12StepFunction_5print(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("print (wrapper)", 0);
-  __pyx_r = __pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_4print(((struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *)__pyx_v_self));
+  __pyx_r = __pyx_pf_13MathFunctions_12StepFunction_4print(((struct __pyx_obj_13MathFunctions_StepFunction *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_4print(struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *__pyx_v_self) {
+static PyObject *__pyx_pf_13MathFunctions_12StepFunction_4print(struct __pyx_obj_13MathFunctions_StepFunction *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("print", 0);
 
-  /* "FunctionsCPP/MathFunctions.pyx":45
+  /* "MathFunctions.pyx":51
  *         self.sf.push(coef, root, exp)
  *     def print(self):
  *         self.sf.print()             # <<<<<<<<<<<<<<
@@ -1835,7 +1843,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_4print(s
  */
   __pyx_v_self->sf.print();
 
-  /* "FunctionsCPP/MathFunctions.pyx":44
+  /* "MathFunctions.pyx":50
  *     def push(self, double coef, double root, double exp):
  *         self.sf.push(coef, root, exp)
  *     def print(self):             # <<<<<<<<<<<<<<
@@ -1850,7 +1858,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_4print(s
   return __pyx_r;
 }
 
-/* "FunctionsCPP/MathFunctions.pyx":46
+/* "MathFunctions.pyx":52
  *     def print(self):
  *         self.sf.print()
  *     def __call__(self, double z):             # <<<<<<<<<<<<<<
@@ -1859,8 +1867,8 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_4print(s
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_7__call__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_7__call__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_13MathFunctions_12StepFunction_7__call__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyObject *__pyx_pw_13MathFunctions_12StepFunction_7__call__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   double __pyx_v_z;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -1887,31 +1895,31 @@ static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_7__call_
         else goto __pyx_L5_argtuple_error;
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__call__") < 0)) __PYX_ERR(1, 46, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__call__") < 0)) __PYX_ERR(1, 52, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 1) {
       goto __pyx_L5_argtuple_error;
     } else {
       values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
     }
-    __pyx_v_z = __pyx_PyFloat_AsDouble(values[0]); if (unlikely((__pyx_v_z == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 46, __pyx_L3_error)
+    __pyx_v_z = __pyx_PyFloat_AsDouble(values[0]); if (unlikely((__pyx_v_z == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 52, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__call__", 1, 1, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 46, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__call__", 1, 1, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 52, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("FunctionsCPP.MathFunctions.StepFunction.__call__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("MathFunctions.StepFunction.__call__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_6__call__(((struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *)__pyx_v_self), __pyx_v_z);
+  __pyx_r = __pyx_pf_13MathFunctions_12StepFunction_6__call__(((struct __pyx_obj_13MathFunctions_StepFunction *)__pyx_v_self), __pyx_v_z);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_6__call__(struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *__pyx_v_self, double __pyx_v_z) {
+static PyObject *__pyx_pf_13MathFunctions_12StepFunction_6__call__(struct __pyx_obj_13MathFunctions_StepFunction *__pyx_v_self, double __pyx_v_z) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -1920,7 +1928,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_6__call_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__call__", 0);
 
-  /* "FunctionsCPP/MathFunctions.pyx":47
+  /* "MathFunctions.pyx":53
  *         self.sf.print()
  *     def __call__(self, double z):
  *         return self.sf.get(z)             # <<<<<<<<<<<<<<
@@ -1928,13 +1936,13 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_6__call_
  *         return self.sf.str().decode('utf-8')
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->sf.operator()(__pyx_v_z)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 47, __pyx_L1_error)
+  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->sf.operator()(__pyx_v_z)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 53, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "FunctionsCPP/MathFunctions.pyx":46
+  /* "MathFunctions.pyx":52
  *     def print(self):
  *         self.sf.print()
  *     def __call__(self, double z):             # <<<<<<<<<<<<<<
@@ -1945,7 +1953,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_6__call_
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("FunctionsCPP.MathFunctions.StepFunction.__call__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("MathFunctions.StepFunction.__call__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -1953,7 +1961,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_6__call_
   return __pyx_r;
 }
 
-/* "FunctionsCPP/MathFunctions.pyx":48
+/* "MathFunctions.pyx":54
  *     def __call__(self, double z):
  *         return self.sf.get(z)
  *     def __str__(self):             # <<<<<<<<<<<<<<
@@ -1962,19 +1970,19 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_6__call_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_9__str__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_9__str__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_13MathFunctions_12StepFunction_9__str__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_13MathFunctions_12StepFunction_9__str__(PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__str__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_8__str__(((struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *)__pyx_v_self));
+  __pyx_r = __pyx_pf_13MathFunctions_12StepFunction_8__str__(((struct __pyx_obj_13MathFunctions_StepFunction *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_8__str__(struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *__pyx_v_self) {
+static PyObject *__pyx_pf_13MathFunctions_12StepFunction_8__str__(struct __pyx_obj_13MathFunctions_StepFunction *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -1983,7 +1991,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_8__str__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__str__", 0);
 
-  /* "FunctionsCPP/MathFunctions.pyx":49
+  /* "MathFunctions.pyx":55
  *         return self.sf.get(z)
  *     def __str__(self):
  *         return self.sf.str().decode('utf-8')             # <<<<<<<<<<<<<<
@@ -1991,13 +1999,13 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_8__str__
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_decode_cpp_string(__pyx_v_self->sf.str(), 0, PY_SSIZE_T_MAX, NULL, NULL, PyUnicode_DecodeUTF8); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 49, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_decode_cpp_string(__pyx_v_self->sf.str(), 0, PY_SSIZE_T_MAX, NULL, NULL, PyUnicode_DecodeUTF8); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 55, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "FunctionsCPP/MathFunctions.pyx":48
+  /* "MathFunctions.pyx":54
  *     def __call__(self, double z):
  *         return self.sf.get(z)
  *     def __str__(self):             # <<<<<<<<<<<<<<
@@ -2008,7 +2016,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_8__str__
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("FunctionsCPP.MathFunctions.StepFunction.__str__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("MathFunctions.StepFunction.__str__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2016,7 +2024,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_8__str__
   return __pyx_r;
 }
 
-/* "FunctionsCPP/MathFunctions.pyx":53
+/* "MathFunctions.pyx":59
  * 
  *     @staticmethod
  *     cdef create(Stepfunction sfn):             # <<<<<<<<<<<<<<
@@ -2024,8 +2032,8 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_8__str__
  *         fn.sf = sfn
  */
 
-static PyObject *__pyx_f_12FunctionsCPP_13MathFunctions_12StepFunction_create(Stepfunction __pyx_v_sfn) {
-  struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *__pyx_v_fn = NULL;
+static PyObject *__pyx_f_13MathFunctions_12StepFunction_create(Stepfunction __pyx_v_sfn) {
+  struct __pyx_obj_13MathFunctions_StepFunction *__pyx_v_fn = NULL;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2034,19 +2042,19 @@ static PyObject *__pyx_f_12FunctionsCPP_13MathFunctions_12StepFunction_create(St
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("create", 0);
 
-  /* "FunctionsCPP/MathFunctions.pyx":54
+  /* "MathFunctions.pyx":60
  *     @staticmethod
  *     cdef create(Stepfunction sfn):
  *         fn = StepFunction()             # <<<<<<<<<<<<<<
  *         fn.sf = sfn
  *         return fn
  */
-  __pyx_t_1 = __Pyx_PyObject_CallNoArg(((PyObject *)__pyx_ptype_12FunctionsCPP_13MathFunctions_StepFunction)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 54, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_CallNoArg(((PyObject *)__pyx_ptype_13MathFunctions_StepFunction)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 60, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_v_fn = ((struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *)__pyx_t_1);
+  __pyx_v_fn = ((struct __pyx_obj_13MathFunctions_StepFunction *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "FunctionsCPP/MathFunctions.pyx":55
+  /* "MathFunctions.pyx":61
  *     cdef create(Stepfunction sfn):
  *         fn = StepFunction()
  *         fn.sf = sfn             # <<<<<<<<<<<<<<
@@ -2055,7 +2063,7 @@ static PyObject *__pyx_f_12FunctionsCPP_13MathFunctions_12StepFunction_create(St
  */
   __pyx_v_fn->sf = __pyx_v_sfn;
 
-  /* "FunctionsCPP/MathFunctions.pyx":56
+  /* "MathFunctions.pyx":62
  *         fn = StepFunction()
  *         fn.sf = sfn
  *         return fn             # <<<<<<<<<<<<<<
@@ -2067,7 +2075,7 @@ static PyObject *__pyx_f_12FunctionsCPP_13MathFunctions_12StepFunction_create(St
   __pyx_r = ((PyObject *)__pyx_v_fn);
   goto __pyx_L0;
 
-  /* "FunctionsCPP/MathFunctions.pyx":53
+  /* "MathFunctions.pyx":59
  * 
  *     @staticmethod
  *     cdef create(Stepfunction sfn):             # <<<<<<<<<<<<<<
@@ -2078,7 +2086,7 @@ static PyObject *__pyx_f_12FunctionsCPP_13MathFunctions_12StepFunction_create(St
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("FunctionsCPP.MathFunctions.StepFunction.create", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("MathFunctions.StepFunction.create", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = 0;
   __pyx_L0:;
   __Pyx_XDECREF((PyObject *)__pyx_v_fn);
@@ -2087,7 +2095,7 @@ static PyObject *__pyx_f_12FunctionsCPP_13MathFunctions_12StepFunction_create(St
   return __pyx_r;
 }
 
-/* "FunctionsCPP/MathFunctions.pyx":58
+/* "MathFunctions.pyx":64
  *         return fn
  * 
  *     def __add__(StepFunction left, StepFunction right):             # <<<<<<<<<<<<<<
@@ -2096,17 +2104,17 @@ static PyObject *__pyx_f_12FunctionsCPP_13MathFunctions_12StepFunction_create(St
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_11__add__(PyObject *__pyx_v_left, PyObject *__pyx_v_right); /*proto*/
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_11__add__(PyObject *__pyx_v_left, PyObject *__pyx_v_right) {
+static PyObject *__pyx_pw_13MathFunctions_12StepFunction_11__add__(PyObject *__pyx_v_left, PyObject *__pyx_v_right); /*proto*/
+static PyObject *__pyx_pw_13MathFunctions_12StepFunction_11__add__(PyObject *__pyx_v_left, PyObject *__pyx_v_right) {
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__add__ (wrapper)", 0);
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_left), __pyx_ptype_12FunctionsCPP_13MathFunctions_StepFunction, 1, "left", 0))) __PYX_ERR(1, 58, __pyx_L1_error)
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_right), __pyx_ptype_12FunctionsCPP_13MathFunctions_StepFunction, 1, "right", 0))) __PYX_ERR(1, 58, __pyx_L1_error)
-  __pyx_r = __pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_10__add__(((struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *)__pyx_v_left), ((struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *)__pyx_v_right));
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_left), __pyx_ptype_13MathFunctions_StepFunction, 1, "left", 0))) __PYX_ERR(1, 64, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_right), __pyx_ptype_13MathFunctions_StepFunction, 1, "right", 0))) __PYX_ERR(1, 64, __pyx_L1_error)
+  __pyx_r = __pyx_pf_13MathFunctions_12StepFunction_10__add__(((struct __pyx_obj_13MathFunctions_StepFunction *)__pyx_v_left), ((struct __pyx_obj_13MathFunctions_StepFunction *)__pyx_v_right));
 
   /* function exit code */
   goto __pyx_L0;
@@ -2117,7 +2125,7 @@ static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_11__add_
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_10__add__(struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *__pyx_v_left, struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *__pyx_v_right) {
+static PyObject *__pyx_pf_13MathFunctions_12StepFunction_10__add__(struct __pyx_obj_13MathFunctions_StepFunction *__pyx_v_left, struct __pyx_obj_13MathFunctions_StepFunction *__pyx_v_right) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2126,7 +2134,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_10__add_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__add__", 0);
 
-  /* "FunctionsCPP/MathFunctions.pyx":59
+  /* "MathFunctions.pyx":65
  * 
  *     def __add__(StepFunction left, StepFunction right):
  *         return StepFunction.create(left.sf + right.sf)             # <<<<<<<<<<<<<<
@@ -2134,13 +2142,13 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_10__add_
  *     __radd__ = __add__
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_12FunctionsCPP_13MathFunctions_12StepFunction_create((__pyx_v_left->sf + __pyx_v_right->sf)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 59, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_13MathFunctions_12StepFunction_create((__pyx_v_left->sf + __pyx_v_right->sf)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 65, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "FunctionsCPP/MathFunctions.pyx":58
+  /* "MathFunctions.pyx":64
  *         return fn
  * 
  *     def __add__(StepFunction left, StepFunction right):             # <<<<<<<<<<<<<<
@@ -2151,7 +2159,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_10__add_
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("FunctionsCPP.MathFunctions.StepFunction.__add__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("MathFunctions.StepFunction.__add__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2159,7 +2167,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_10__add_
   return __pyx_r;
 }
 
-/* "FunctionsCPP/MathFunctions.pyx":63
+/* "MathFunctions.pyx":69
  *     __radd__ = __add__
  * 
  *     def derivative(self):             # <<<<<<<<<<<<<<
@@ -2168,19 +2176,19 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_10__add_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_13derivative(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_13derivative(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_13MathFunctions_12StepFunction_13derivative(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_13MathFunctions_12StepFunction_13derivative(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("derivative (wrapper)", 0);
-  __pyx_r = __pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_12derivative(((struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *)__pyx_v_self));
+  __pyx_r = __pyx_pf_13MathFunctions_12StepFunction_12derivative(((struct __pyx_obj_13MathFunctions_StepFunction *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_12derivative(struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *__pyx_v_self) {
+static PyObject *__pyx_pf_13MathFunctions_12StepFunction_12derivative(struct __pyx_obj_13MathFunctions_StepFunction *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2189,7 +2197,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_12deriva
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("derivative", 0);
 
-  /* "FunctionsCPP/MathFunctions.pyx":64
+  /* "MathFunctions.pyx":70
  * 
  *     def derivative(self):
  *         return StepFunction.create(self.sf.derivative())             # <<<<<<<<<<<<<<
@@ -2197,13 +2205,13 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_12deriva
  *     def integral(self, double C = 0):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_12FunctionsCPP_13MathFunctions_12StepFunction_create(__pyx_v_self->sf.derivative()); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 64, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_13MathFunctions_12StepFunction_create(__pyx_v_self->sf.derivative()); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 70, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "FunctionsCPP/MathFunctions.pyx":63
+  /* "MathFunctions.pyx":69
  *     __radd__ = __add__
  * 
  *     def derivative(self):             # <<<<<<<<<<<<<<
@@ -2214,7 +2222,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_12deriva
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("FunctionsCPP.MathFunctions.StepFunction.derivative", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("MathFunctions.StepFunction.derivative", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2222,7 +2230,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_12deriva
   return __pyx_r;
 }
 
-/* "FunctionsCPP/MathFunctions.pyx":66
+/* "MathFunctions.pyx":72
  *         return StepFunction.create(self.sf.derivative())
  * 
  *     def integral(self, double C = 0):             # <<<<<<<<<<<<<<
@@ -2231,8 +2239,8 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_12deriva
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_15integral(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_15integral(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_13MathFunctions_12StepFunction_15integral(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyObject *__pyx_pw_13MathFunctions_12StepFunction_15integral(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   double __pyx_v_C;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -2261,7 +2269,7 @@ static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_15integr
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "integral") < 0)) __PYX_ERR(1, 66, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "integral") < 0)) __PYX_ERR(1, 72, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -2272,28 +2280,28 @@ static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_15integr
       }
     }
     if (values[0]) {
-      __pyx_v_C = __pyx_PyFloat_AsDouble(values[0]); if (unlikely((__pyx_v_C == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 66, __pyx_L3_error)
+      __pyx_v_C = __pyx_PyFloat_AsDouble(values[0]); if (unlikely((__pyx_v_C == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 72, __pyx_L3_error)
     } else {
       __pyx_v_C = ((double)0.0);
     }
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("integral", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 66, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("integral", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 72, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("FunctionsCPP.MathFunctions.StepFunction.integral", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("MathFunctions.StepFunction.integral", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_14integral(((struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *)__pyx_v_self), __pyx_v_C);
+  __pyx_r = __pyx_pf_13MathFunctions_12StepFunction_14integral(((struct __pyx_obj_13MathFunctions_StepFunction *)__pyx_v_self), __pyx_v_C);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_14integral(struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *__pyx_v_self, double __pyx_v_C) {
-  struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *__pyx_v_newsf = NULL;
+static PyObject *__pyx_pf_13MathFunctions_12StepFunction_14integral(struct __pyx_obj_13MathFunctions_StepFunction *__pyx_v_self, double __pyx_v_C) {
+  struct __pyx_obj_13MathFunctions_StepFunction *__pyx_v_newsf = NULL;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2302,19 +2310,19 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_14integr
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("integral", 0);
 
-  /* "FunctionsCPP/MathFunctions.pyx":67
+  /* "MathFunctions.pyx":73
  * 
  *     def integral(self, double C = 0):
  *         newsf = StepFunction()             # <<<<<<<<<<<<<<
  *         newsf.sf = self.sf.integral(C)
  *         return newsf
  */
-  __pyx_t_1 = __Pyx_PyObject_CallNoArg(((PyObject *)__pyx_ptype_12FunctionsCPP_13MathFunctions_StepFunction)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 67, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_CallNoArg(((PyObject *)__pyx_ptype_13MathFunctions_StepFunction)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 73, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_v_newsf = ((struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *)__pyx_t_1);
+  __pyx_v_newsf = ((struct __pyx_obj_13MathFunctions_StepFunction *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "FunctionsCPP/MathFunctions.pyx":68
+  /* "MathFunctions.pyx":74
  *     def integral(self, double C = 0):
  *         newsf = StepFunction()
  *         newsf.sf = self.sf.integral(C)             # <<<<<<<<<<<<<<
@@ -2323,7 +2331,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_14integr
  */
   __pyx_v_newsf->sf = __pyx_v_self->sf.integral(__pyx_v_C);
 
-  /* "FunctionsCPP/MathFunctions.pyx":69
+  /* "MathFunctions.pyx":75
  *         newsf = StepFunction()
  *         newsf.sf = self.sf.integral(C)
  *         return newsf             # <<<<<<<<<<<<<<
@@ -2335,7 +2343,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_14integr
   __pyx_r = ((PyObject *)__pyx_v_newsf);
   goto __pyx_L0;
 
-  /* "FunctionsCPP/MathFunctions.pyx":66
+  /* "MathFunctions.pyx":72
  *         return StepFunction.create(self.sf.derivative())
  * 
  *     def integral(self, double C = 0):             # <<<<<<<<<<<<<<
@@ -2346,7 +2354,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_14integr
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("FunctionsCPP.MathFunctions.StepFunction.integral", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("MathFunctions.StepFunction.integral", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF((PyObject *)__pyx_v_newsf);
@@ -2355,7 +2363,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_14integr
   return __pyx_r;
 }
 
-/* "FunctionsCPP/MathFunctions.pyx":70
+/* "MathFunctions.pyx":76
  *         newsf.sf = self.sf.integral(C)
  *         return newsf
  *     def __neg__(self):             # <<<<<<<<<<<<<<
@@ -2364,19 +2372,19 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_14integr
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_17__neg__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_17__neg__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_13MathFunctions_12StepFunction_17__neg__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_13MathFunctions_12StepFunction_17__neg__(PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__neg__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_16__neg__(((struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *)__pyx_v_self));
+  __pyx_r = __pyx_pf_13MathFunctions_12StepFunction_16__neg__(((struct __pyx_obj_13MathFunctions_StepFunction *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_16__neg__(struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *__pyx_v_self) {
+static PyObject *__pyx_pf_13MathFunctions_12StepFunction_16__neg__(struct __pyx_obj_13MathFunctions_StepFunction *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2385,7 +2393,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_16__neg_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__neg__", 0);
 
-  /* "FunctionsCPP/MathFunctions.pyx":71
+  /* "MathFunctions.pyx":77
  *         return newsf
  *     def __neg__(self):
  *         return StepFunction.create(-self.sf)             # <<<<<<<<<<<<<<
@@ -2393,13 +2401,13 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_16__neg_
  *         return StepFunction.create(left.sf + (-right.sf))
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_12FunctionsCPP_13MathFunctions_12StepFunction_create((-__pyx_v_self->sf)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 71, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_13MathFunctions_12StepFunction_create((-__pyx_v_self->sf)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 77, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "FunctionsCPP/MathFunctions.pyx":70
+  /* "MathFunctions.pyx":76
  *         newsf.sf = self.sf.integral(C)
  *         return newsf
  *     def __neg__(self):             # <<<<<<<<<<<<<<
@@ -2410,7 +2418,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_16__neg_
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("FunctionsCPP.MathFunctions.StepFunction.__neg__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("MathFunctions.StepFunction.__neg__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2418,7 +2426,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_16__neg_
   return __pyx_r;
 }
 
-/* "FunctionsCPP/MathFunctions.pyx":72
+/* "MathFunctions.pyx":78
  *     def __neg__(self):
  *         return StepFunction.create(-self.sf)
  *     def __sub__(StepFunction left, StepFunction right):             # <<<<<<<<<<<<<<
@@ -2427,17 +2435,17 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_16__neg_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_19__sub__(PyObject *__pyx_v_left, PyObject *__pyx_v_right); /*proto*/
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_19__sub__(PyObject *__pyx_v_left, PyObject *__pyx_v_right) {
+static PyObject *__pyx_pw_13MathFunctions_12StepFunction_19__sub__(PyObject *__pyx_v_left, PyObject *__pyx_v_right); /*proto*/
+static PyObject *__pyx_pw_13MathFunctions_12StepFunction_19__sub__(PyObject *__pyx_v_left, PyObject *__pyx_v_right) {
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__sub__ (wrapper)", 0);
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_left), __pyx_ptype_12FunctionsCPP_13MathFunctions_StepFunction, 1, "left", 0))) __PYX_ERR(1, 72, __pyx_L1_error)
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_right), __pyx_ptype_12FunctionsCPP_13MathFunctions_StepFunction, 1, "right", 0))) __PYX_ERR(1, 72, __pyx_L1_error)
-  __pyx_r = __pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_18__sub__(((struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *)__pyx_v_left), ((struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *)__pyx_v_right));
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_left), __pyx_ptype_13MathFunctions_StepFunction, 1, "left", 0))) __PYX_ERR(1, 78, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_right), __pyx_ptype_13MathFunctions_StepFunction, 1, "right", 0))) __PYX_ERR(1, 78, __pyx_L1_error)
+  __pyx_r = __pyx_pf_13MathFunctions_12StepFunction_18__sub__(((struct __pyx_obj_13MathFunctions_StepFunction *)__pyx_v_left), ((struct __pyx_obj_13MathFunctions_StepFunction *)__pyx_v_right));
 
   /* function exit code */
   goto __pyx_L0;
@@ -2448,7 +2456,7 @@ static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_19__sub_
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_18__sub__(struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *__pyx_v_left, struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *__pyx_v_right) {
+static PyObject *__pyx_pf_13MathFunctions_12StepFunction_18__sub__(struct __pyx_obj_13MathFunctions_StepFunction *__pyx_v_left, struct __pyx_obj_13MathFunctions_StepFunction *__pyx_v_right) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2457,7 +2465,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_18__sub_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__sub__", 0);
 
-  /* "FunctionsCPP/MathFunctions.pyx":73
+  /* "MathFunctions.pyx":79
  *         return StepFunction.create(-self.sf)
  *     def __sub__(StepFunction left, StepFunction right):
  *         return StepFunction.create(left.sf + (-right.sf))             # <<<<<<<<<<<<<<
@@ -2465,13 +2473,13 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_18__sub_
  *         return StepFunction.create(-left.sf + right.sf)
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_12FunctionsCPP_13MathFunctions_12StepFunction_create((__pyx_v_left->sf + (-__pyx_v_right->sf))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 73, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_13MathFunctions_12StepFunction_create((__pyx_v_left->sf + (-__pyx_v_right->sf))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 79, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "FunctionsCPP/MathFunctions.pyx":72
+  /* "MathFunctions.pyx":78
  *     def __neg__(self):
  *         return StepFunction.create(-self.sf)
  *     def __sub__(StepFunction left, StepFunction right):             # <<<<<<<<<<<<<<
@@ -2482,7 +2490,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_18__sub_
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("FunctionsCPP.MathFunctions.StepFunction.__sub__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("MathFunctions.StepFunction.__sub__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2490,7 +2498,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_18__sub_
   return __pyx_r;
 }
 
-/* "FunctionsCPP/MathFunctions.pyx":74
+/* "MathFunctions.pyx":80
  *     def __sub__(StepFunction left, StepFunction right):
  *         return StepFunction.create(left.sf + (-right.sf))
  *     def __rsub__(StepFunction left, StepFunction right):             # <<<<<<<<<<<<<<
@@ -2499,16 +2507,16 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_18__sub_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_21__rsub__(PyObject *__pyx_v_left, PyObject *__pyx_v_right); /*proto*/
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_21__rsub__(PyObject *__pyx_v_left, PyObject *__pyx_v_right) {
+static PyObject *__pyx_pw_13MathFunctions_12StepFunction_21__rsub__(PyObject *__pyx_v_left, PyObject *__pyx_v_right); /*proto*/
+static PyObject *__pyx_pw_13MathFunctions_12StepFunction_21__rsub__(PyObject *__pyx_v_left, PyObject *__pyx_v_right) {
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__rsub__ (wrapper)", 0);
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_right), __pyx_ptype_12FunctionsCPP_13MathFunctions_StepFunction, 1, "right", 0))) __PYX_ERR(1, 74, __pyx_L1_error)
-  __pyx_r = __pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_20__rsub__(((struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *)__pyx_v_left), ((struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *)__pyx_v_right));
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_right), __pyx_ptype_13MathFunctions_StepFunction, 1, "right", 0))) __PYX_ERR(1, 80, __pyx_L1_error)
+  __pyx_r = __pyx_pf_13MathFunctions_12StepFunction_20__rsub__(((struct __pyx_obj_13MathFunctions_StepFunction *)__pyx_v_left), ((struct __pyx_obj_13MathFunctions_StepFunction *)__pyx_v_right));
 
   /* function exit code */
   goto __pyx_L0;
@@ -2519,7 +2527,7 @@ static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_21__rsub
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_20__rsub__(struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *__pyx_v_left, struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *__pyx_v_right) {
+static PyObject *__pyx_pf_13MathFunctions_12StepFunction_20__rsub__(struct __pyx_obj_13MathFunctions_StepFunction *__pyx_v_left, struct __pyx_obj_13MathFunctions_StepFunction *__pyx_v_right) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2528,21 +2536,21 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_20__rsub
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__rsub__", 0);
 
-  /* "FunctionsCPP/MathFunctions.pyx":75
+  /* "MathFunctions.pyx":81
  *         return StepFunction.create(left.sf + (-right.sf))
  *     def __rsub__(StepFunction left, StepFunction right):
  *         return StepFunction.create(-left.sf + right.sf)             # <<<<<<<<<<<<<<
  *     def __mul__(StepFunction a, double b):
- *         return StepFunction.create(a.sf.div(b))
+ *         return StepFunction.create(a.sf.mul(b))
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_12FunctionsCPP_13MathFunctions_12StepFunction_create(((-__pyx_v_left->sf) + __pyx_v_right->sf)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 75, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_13MathFunctions_12StepFunction_create(((-__pyx_v_left->sf) + __pyx_v_right->sf)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 81, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "FunctionsCPP/MathFunctions.pyx":74
+  /* "MathFunctions.pyx":80
  *     def __sub__(StepFunction left, StepFunction right):
  *         return StepFunction.create(left.sf + (-right.sf))
  *     def __rsub__(StepFunction left, StepFunction right):             # <<<<<<<<<<<<<<
@@ -2553,7 +2561,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_20__rsub
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("FunctionsCPP.MathFunctions.StepFunction.__rsub__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("MathFunctions.StepFunction.__rsub__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2561,17 +2569,17 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_20__rsub
   return __pyx_r;
 }
 
-/* "FunctionsCPP/MathFunctions.pyx":76
+/* "MathFunctions.pyx":82
  *     def __rsub__(StepFunction left, StepFunction right):
  *         return StepFunction.create(-left.sf + right.sf)
  *     def __mul__(StepFunction a, double b):             # <<<<<<<<<<<<<<
- *         return StepFunction.create(a.sf.div(b))
+ *         return StepFunction.create(a.sf.mul(b))
  *     __rmul__ = __mul__
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_23__mul__(PyObject *__pyx_v_a, PyObject *__pyx_arg_b); /*proto*/
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_23__mul__(PyObject *__pyx_v_a, PyObject *__pyx_arg_b) {
+static PyObject *__pyx_pw_13MathFunctions_12StepFunction_23__mul__(PyObject *__pyx_v_a, PyObject *__pyx_arg_b); /*proto*/
+static PyObject *__pyx_pw_13MathFunctions_12StepFunction_23__mul__(PyObject *__pyx_v_a, PyObject *__pyx_arg_b) {
   double __pyx_v_b;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -2580,16 +2588,16 @@ static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_23__mul_
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__mul__ (wrapper)", 0);
   assert(__pyx_arg_b); {
-    __pyx_v_b = __pyx_PyFloat_AsDouble(__pyx_arg_b); if (unlikely((__pyx_v_b == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 76, __pyx_L3_error)
+    __pyx_v_b = __pyx_PyFloat_AsDouble(__pyx_arg_b); if (unlikely((__pyx_v_b == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 82, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
-  __Pyx_AddTraceback("FunctionsCPP.MathFunctions.StepFunction.__mul__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("MathFunctions.StepFunction.__mul__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_a), __pyx_ptype_12FunctionsCPP_13MathFunctions_StepFunction, 1, "a", 0))) __PYX_ERR(1, 76, __pyx_L1_error)
-  __pyx_r = __pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_22__mul__(((struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *)__pyx_v_a), ((double)__pyx_v_b));
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_a), __pyx_ptype_13MathFunctions_StepFunction, 1, "a", 0))) __PYX_ERR(1, 82, __pyx_L1_error)
+  __pyx_r = __pyx_pf_13MathFunctions_12StepFunction_22__mul__(((struct __pyx_obj_13MathFunctions_StepFunction *)__pyx_v_a), ((double)__pyx_v_b));
 
   /* function exit code */
   goto __pyx_L0;
@@ -2600,7 +2608,7 @@ static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_23__mul_
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_22__mul__(struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *__pyx_v_a, double __pyx_v_b) {
+static PyObject *__pyx_pf_13MathFunctions_12StepFunction_22__mul__(struct __pyx_obj_13MathFunctions_StepFunction *__pyx_v_a, double __pyx_v_b) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2609,32 +2617,32 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_22__mul_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__mul__", 0);
 
-  /* "FunctionsCPP/MathFunctions.pyx":77
+  /* "MathFunctions.pyx":83
  *         return StepFunction.create(-left.sf + right.sf)
  *     def __mul__(StepFunction a, double b):
- *         return StepFunction.create(a.sf.div(b))             # <<<<<<<<<<<<<<
+ *         return StepFunction.create(a.sf.mul(b))             # <<<<<<<<<<<<<<
  *     __rmul__ = __mul__
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_12FunctionsCPP_13MathFunctions_12StepFunction_create(__pyx_v_a->sf.operator/(__pyx_v_b)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 77, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_13MathFunctions_12StepFunction_create(__pyx_v_a->sf.operator*(__pyx_v_b)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 83, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "FunctionsCPP/MathFunctions.pyx":76
+  /* "MathFunctions.pyx":82
  *     def __rsub__(StepFunction left, StepFunction right):
  *         return StepFunction.create(-left.sf + right.sf)
  *     def __mul__(StepFunction a, double b):             # <<<<<<<<<<<<<<
- *         return StepFunction.create(a.sf.div(b))
+ *         return StepFunction.create(a.sf.mul(b))
  *     __rmul__ = __mul__
  */
 
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("FunctionsCPP.MathFunctions.StepFunction.__mul__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("MathFunctions.StepFunction.__mul__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2642,8 +2650,236 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_22__mul_
   return __pyx_r;
 }
 
-/* "FunctionsCPP/MathFunctions.pyx":80
+/* "MathFunctions.pyx":86
  *     __rmul__ = __mul__
+ * 
+ *     def max(self, double a, double b):             # <<<<<<<<<<<<<<
+ *         return self.sf.max(a, b)
+ *     def min(self, double a, double b):
+ */
+
+/* Python wrapper */
+static PyObject *__pyx_pw_13MathFunctions_12StepFunction_25max(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyObject *__pyx_pw_13MathFunctions_12StepFunction_25max(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+  double __pyx_v_a;
+  double __pyx_v_b;
+  int __pyx_lineno = 0;
+  const char *__pyx_filename = NULL;
+  int __pyx_clineno = 0;
+  PyObject *__pyx_r = 0;
+  __Pyx_RefNannyDeclarations
+  __Pyx_RefNannySetupContext("max (wrapper)", 0);
+  {
+    static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_a,&__pyx_n_s_b,0};
+    PyObject* values[2] = {0,0};
+    if (unlikely(__pyx_kwds)) {
+      Py_ssize_t kw_args;
+      const Py_ssize_t pos_args = PyTuple_GET_SIZE(__pyx_args);
+      switch (pos_args) {
+        case  2: values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
+        CYTHON_FALLTHROUGH;
+        case  1: values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
+        CYTHON_FALLTHROUGH;
+        case  0: break;
+        default: goto __pyx_L5_argtuple_error;
+      }
+      kw_args = PyDict_Size(__pyx_kwds);
+      switch (pos_args) {
+        case  0:
+        if (likely((values[0] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_a)) != 0)) kw_args--;
+        else goto __pyx_L5_argtuple_error;
+        CYTHON_FALLTHROUGH;
+        case  1:
+        if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_b)) != 0)) kw_args--;
+        else {
+          __Pyx_RaiseArgtupleInvalid("max", 1, 2, 2, 1); __PYX_ERR(1, 86, __pyx_L3_error)
+        }
+      }
+      if (unlikely(kw_args > 0)) {
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "max") < 0)) __PYX_ERR(1, 86, __pyx_L3_error)
+      }
+    } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
+      goto __pyx_L5_argtuple_error;
+    } else {
+      values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
+      values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
+    }
+    __pyx_v_a = __pyx_PyFloat_AsDouble(values[0]); if (unlikely((__pyx_v_a == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 86, __pyx_L3_error)
+    __pyx_v_b = __pyx_PyFloat_AsDouble(values[1]); if (unlikely((__pyx_v_b == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 86, __pyx_L3_error)
+  }
+  goto __pyx_L4_argument_unpacking_done;
+  __pyx_L5_argtuple_error:;
+  __Pyx_RaiseArgtupleInvalid("max", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 86, __pyx_L3_error)
+  __pyx_L3_error:;
+  __Pyx_AddTraceback("MathFunctions.StepFunction.max", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_RefNannyFinishContext();
+  return NULL;
+  __pyx_L4_argument_unpacking_done:;
+  __pyx_r = __pyx_pf_13MathFunctions_12StepFunction_24max(((struct __pyx_obj_13MathFunctions_StepFunction *)__pyx_v_self), __pyx_v_a, __pyx_v_b);
+
+  /* function exit code */
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+static PyObject *__pyx_pf_13MathFunctions_12StepFunction_24max(struct __pyx_obj_13MathFunctions_StepFunction *__pyx_v_self, double __pyx_v_a, double __pyx_v_b) {
+  PyObject *__pyx_r = NULL;
+  __Pyx_RefNannyDeclarations
+  PyObject *__pyx_t_1 = NULL;
+  int __pyx_lineno = 0;
+  const char *__pyx_filename = NULL;
+  int __pyx_clineno = 0;
+  __Pyx_RefNannySetupContext("max", 0);
+
+  /* "MathFunctions.pyx":87
+ * 
+ *     def max(self, double a, double b):
+ *         return self.sf.max(a, b)             # <<<<<<<<<<<<<<
+ *     def min(self, double a, double b):
+ *         return self.sf.min(a, b)
+ */
+  __Pyx_XDECREF(__pyx_r);
+  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->sf.max(__pyx_v_a, __pyx_v_b)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 87, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_r = __pyx_t_1;
+  __pyx_t_1 = 0;
+  goto __pyx_L0;
+
+  /* "MathFunctions.pyx":86
+ *     __rmul__ = __mul__
+ * 
+ *     def max(self, double a, double b):             # <<<<<<<<<<<<<<
+ *         return self.sf.max(a, b)
+ *     def min(self, double a, double b):
+ */
+
+  /* function exit code */
+  __pyx_L1_error:;
+  __Pyx_XDECREF(__pyx_t_1);
+  __Pyx_AddTraceback("MathFunctions.StepFunction.max", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __pyx_r = NULL;
+  __pyx_L0:;
+  __Pyx_XGIVEREF(__pyx_r);
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+/* "MathFunctions.pyx":88
+ *     def max(self, double a, double b):
+ *         return self.sf.max(a, b)
+ *     def min(self, double a, double b):             # <<<<<<<<<<<<<<
+ *         return self.sf.min(a, b)
+ * 
+ */
+
+/* Python wrapper */
+static PyObject *__pyx_pw_13MathFunctions_12StepFunction_27min(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyObject *__pyx_pw_13MathFunctions_12StepFunction_27min(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+  double __pyx_v_a;
+  double __pyx_v_b;
+  int __pyx_lineno = 0;
+  const char *__pyx_filename = NULL;
+  int __pyx_clineno = 0;
+  PyObject *__pyx_r = 0;
+  __Pyx_RefNannyDeclarations
+  __Pyx_RefNannySetupContext("min (wrapper)", 0);
+  {
+    static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_a,&__pyx_n_s_b,0};
+    PyObject* values[2] = {0,0};
+    if (unlikely(__pyx_kwds)) {
+      Py_ssize_t kw_args;
+      const Py_ssize_t pos_args = PyTuple_GET_SIZE(__pyx_args);
+      switch (pos_args) {
+        case  2: values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
+        CYTHON_FALLTHROUGH;
+        case  1: values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
+        CYTHON_FALLTHROUGH;
+        case  0: break;
+        default: goto __pyx_L5_argtuple_error;
+      }
+      kw_args = PyDict_Size(__pyx_kwds);
+      switch (pos_args) {
+        case  0:
+        if (likely((values[0] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_a)) != 0)) kw_args--;
+        else goto __pyx_L5_argtuple_error;
+        CYTHON_FALLTHROUGH;
+        case  1:
+        if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_b)) != 0)) kw_args--;
+        else {
+          __Pyx_RaiseArgtupleInvalid("min", 1, 2, 2, 1); __PYX_ERR(1, 88, __pyx_L3_error)
+        }
+      }
+      if (unlikely(kw_args > 0)) {
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "min") < 0)) __PYX_ERR(1, 88, __pyx_L3_error)
+      }
+    } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
+      goto __pyx_L5_argtuple_error;
+    } else {
+      values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
+      values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
+    }
+    __pyx_v_a = __pyx_PyFloat_AsDouble(values[0]); if (unlikely((__pyx_v_a == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 88, __pyx_L3_error)
+    __pyx_v_b = __pyx_PyFloat_AsDouble(values[1]); if (unlikely((__pyx_v_b == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 88, __pyx_L3_error)
+  }
+  goto __pyx_L4_argument_unpacking_done;
+  __pyx_L5_argtuple_error:;
+  __Pyx_RaiseArgtupleInvalid("min", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 88, __pyx_L3_error)
+  __pyx_L3_error:;
+  __Pyx_AddTraceback("MathFunctions.StepFunction.min", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_RefNannyFinishContext();
+  return NULL;
+  __pyx_L4_argument_unpacking_done:;
+  __pyx_r = __pyx_pf_13MathFunctions_12StepFunction_26min(((struct __pyx_obj_13MathFunctions_StepFunction *)__pyx_v_self), __pyx_v_a, __pyx_v_b);
+
+  /* function exit code */
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+static PyObject *__pyx_pf_13MathFunctions_12StepFunction_26min(struct __pyx_obj_13MathFunctions_StepFunction *__pyx_v_self, double __pyx_v_a, double __pyx_v_b) {
+  PyObject *__pyx_r = NULL;
+  __Pyx_RefNannyDeclarations
+  PyObject *__pyx_t_1 = NULL;
+  int __pyx_lineno = 0;
+  const char *__pyx_filename = NULL;
+  int __pyx_clineno = 0;
+  __Pyx_RefNannySetupContext("min", 0);
+
+  /* "MathFunctions.pyx":89
+ *         return self.sf.max(a, b)
+ *     def min(self, double a, double b):
+ *         return self.sf.min(a, b)             # <<<<<<<<<<<<<<
+ * 
+ *     def __truediv__(StepFunction a, double b):
+ */
+  __Pyx_XDECREF(__pyx_r);
+  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->sf.min(__pyx_v_a, __pyx_v_b)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 89, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_r = __pyx_t_1;
+  __pyx_t_1 = 0;
+  goto __pyx_L0;
+
+  /* "MathFunctions.pyx":88
+ *     def max(self, double a, double b):
+ *         return self.sf.max(a, b)
+ *     def min(self, double a, double b):             # <<<<<<<<<<<<<<
+ *         return self.sf.min(a, b)
+ * 
+ */
+
+  /* function exit code */
+  __pyx_L1_error:;
+  __Pyx_XDECREF(__pyx_t_1);
+  __Pyx_AddTraceback("MathFunctions.StepFunction.min", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __pyx_r = NULL;
+  __pyx_L0:;
+  __Pyx_XGIVEREF(__pyx_r);
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+/* "MathFunctions.pyx":91
+ *         return self.sf.min(a, b)
  * 
  *     def __truediv__(StepFunction a, double b):             # <<<<<<<<<<<<<<
  *         return StepFunction.create(a.sf.div(b))
@@ -2651,8 +2887,8 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_22__mul_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_25__truediv__(PyObject *__pyx_v_a, PyObject *__pyx_arg_b); /*proto*/
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_25__truediv__(PyObject *__pyx_v_a, PyObject *__pyx_arg_b) {
+static PyObject *__pyx_pw_13MathFunctions_12StepFunction_29__truediv__(PyObject *__pyx_v_a, PyObject *__pyx_arg_b); /*proto*/
+static PyObject *__pyx_pw_13MathFunctions_12StepFunction_29__truediv__(PyObject *__pyx_v_a, PyObject *__pyx_arg_b) {
   double __pyx_v_b;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -2661,16 +2897,16 @@ static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_25__true
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__truediv__ (wrapper)", 0);
   assert(__pyx_arg_b); {
-    __pyx_v_b = __pyx_PyFloat_AsDouble(__pyx_arg_b); if (unlikely((__pyx_v_b == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 80, __pyx_L3_error)
+    __pyx_v_b = __pyx_PyFloat_AsDouble(__pyx_arg_b); if (unlikely((__pyx_v_b == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 91, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
-  __Pyx_AddTraceback("FunctionsCPP.MathFunctions.StepFunction.__truediv__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("MathFunctions.StepFunction.__truediv__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_a), __pyx_ptype_12FunctionsCPP_13MathFunctions_StepFunction, 1, "a", 0))) __PYX_ERR(1, 80, __pyx_L1_error)
-  __pyx_r = __pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_24__truediv__(((struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *)__pyx_v_a), ((double)__pyx_v_b));
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_a), __pyx_ptype_13MathFunctions_StepFunction, 1, "a", 0))) __PYX_ERR(1, 91, __pyx_L1_error)
+  __pyx_r = __pyx_pf_13MathFunctions_12StepFunction_28__truediv__(((struct __pyx_obj_13MathFunctions_StepFunction *)__pyx_v_a), ((double)__pyx_v_b));
 
   /* function exit code */
   goto __pyx_L0;
@@ -2681,7 +2917,7 @@ static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_25__true
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_24__truediv__(struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *__pyx_v_a, double __pyx_v_b) {
+static PyObject *__pyx_pf_13MathFunctions_12StepFunction_28__truediv__(struct __pyx_obj_13MathFunctions_StepFunction *__pyx_v_a, double __pyx_v_b) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2690,7 +2926,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_24__true
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__truediv__", 0);
 
-  /* "FunctionsCPP/MathFunctions.pyx":81
+  /* "MathFunctions.pyx":92
  * 
  *     def __truediv__(StepFunction a, double b):
  *         return StepFunction.create(a.sf.div(b))             # <<<<<<<<<<<<<<
@@ -2698,14 +2934,14 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_24__true
  * cdef class Poly:
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_12FunctionsCPP_13MathFunctions_12StepFunction_create(__pyx_v_a->sf.operator/(__pyx_v_b)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 81, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_13MathFunctions_12StepFunction_create(__pyx_v_a->sf.operator/(__pyx_v_b)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 92, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "FunctionsCPP/MathFunctions.pyx":80
- *     __rmul__ = __mul__
+  /* "MathFunctions.pyx":91
+ *         return self.sf.min(a, b)
  * 
  *     def __truediv__(StepFunction a, double b):             # <<<<<<<<<<<<<<
  *         return StepFunction.create(a.sf.div(b))
@@ -2715,7 +2951,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_24__true
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("FunctionsCPP.MathFunctions.StepFunction.__truediv__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("MathFunctions.StepFunction.__truediv__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2730,19 +2966,19 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_24__true
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_27__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_27__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_13MathFunctions_12StepFunction_31__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_13MathFunctions_12StepFunction_31__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__reduce_cython__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_26__reduce_cython__(((struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *)__pyx_v_self));
+  __pyx_r = __pyx_pf_13MathFunctions_12StepFunction_30__reduce_cython__(((struct __pyx_obj_13MathFunctions_StepFunction *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_26__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *__pyx_v_self) {
+static PyObject *__pyx_pf_13MathFunctions_12StepFunction_30__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_13MathFunctions_StepFunction *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2772,7 +3008,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_26__redu
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("FunctionsCPP.MathFunctions.StepFunction.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("MathFunctions.StepFunction.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
@@ -2787,19 +3023,19 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_26__redu
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_29__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state); /*proto*/
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_29__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pw_13MathFunctions_12StepFunction_33__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state); /*proto*/
+static PyObject *__pyx_pw_13MathFunctions_12StepFunction_33__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__setstate_cython__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_28__setstate_cython__(((struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *)__pyx_v_self), ((PyObject *)__pyx_v___pyx_state));
+  __pyx_r = __pyx_pf_13MathFunctions_12StepFunction_32__setstate_cython__(((struct __pyx_obj_13MathFunctions_StepFunction *)__pyx_v_self), ((PyObject *)__pyx_v___pyx_state));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_28__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pf_13MathFunctions_12StepFunction_32__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_13MathFunctions_StepFunction *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2829,14 +3065,14 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_28__sets
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("FunctionsCPP.MathFunctions.StepFunction.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("MathFunctions.StepFunction.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "FunctionsCPP/MathFunctions.pyx":85
+/* "MathFunctions.pyx":96
  * cdef class Poly:
  *     cdef Polynomial poly
  *     def __cinit__(self, list arr = [], double freq = 1, double coef = 1, str symbol = "z"):             # <<<<<<<<<<<<<<
@@ -2845,8 +3081,8 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_12StepFunction_28__sets
  */
 
 /* Python wrapper */
-static int __pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static int __pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static int __pyx_pw_13MathFunctions_4Poly_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static int __pyx_pw_13MathFunctions_4Poly_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_arr = 0;
   double __pyx_v_freq;
   double __pyx_v_coef;
@@ -2904,7 +3140,7 @@ static int __pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_1__cinit__(PyObject *__
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(1, 85, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(1, 96, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -2922,12 +3158,12 @@ static int __pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_1__cinit__(PyObject *__
     }
     __pyx_v_arr = ((PyObject*)values[0]);
     if (values[1]) {
-      __pyx_v_freq = __pyx_PyFloat_AsDouble(values[1]); if (unlikely((__pyx_v_freq == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 85, __pyx_L3_error)
+      __pyx_v_freq = __pyx_PyFloat_AsDouble(values[1]); if (unlikely((__pyx_v_freq == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 96, __pyx_L3_error)
     } else {
       __pyx_v_freq = ((double)1.0);
     }
     if (values[2]) {
-      __pyx_v_coef = __pyx_PyFloat_AsDouble(values[2]); if (unlikely((__pyx_v_coef == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 85, __pyx_L3_error)
+      __pyx_v_coef = __pyx_PyFloat_AsDouble(values[2]); if (unlikely((__pyx_v_coef == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 96, __pyx_L3_error)
     } else {
       __pyx_v_coef = ((double)1.0);
     }
@@ -2935,15 +3171,15 @@ static int __pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_1__cinit__(PyObject *__
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__cinit__", 0, 0, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 85, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__cinit__", 0, 0, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 96, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("FunctionsCPP.MathFunctions.Poly.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("MathFunctions.Poly.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return -1;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_arr), (&PyList_Type), 1, "arr", 1))) __PYX_ERR(1, 85, __pyx_L1_error)
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_symbol), (&PyUnicode_Type), 1, "symbol", 1))) __PYX_ERR(1, 85, __pyx_L1_error)
-  __pyx_r = __pyx_pf_12FunctionsCPP_13MathFunctions_4Poly___cinit__(((struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *)__pyx_v_self), __pyx_v_arr, __pyx_v_freq, __pyx_v_coef, __pyx_v_symbol);
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_arr), (&PyList_Type), 1, "arr", 1))) __PYX_ERR(1, 96, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_symbol), (&PyUnicode_Type), 1, "symbol", 1))) __PYX_ERR(1, 96, __pyx_L1_error)
+  __pyx_r = __pyx_pf_13MathFunctions_4Poly___cinit__(((struct __pyx_obj_13MathFunctions_Poly *)__pyx_v_self), __pyx_v_arr, __pyx_v_freq, __pyx_v_coef, __pyx_v_symbol);
 
   /* function exit code */
   goto __pyx_L0;
@@ -2954,7 +3190,7 @@ static int __pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_1__cinit__(PyObject *__
   return __pyx_r;
 }
 
-static int __pyx_pf_12FunctionsCPP_13MathFunctions_4Poly___cinit__(struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *__pyx_v_self, PyObject *__pyx_v_arr, double __pyx_v_freq, double __pyx_v_coef, PyObject *__pyx_v_symbol) {
+static int __pyx_pf_13MathFunctions_4Poly___cinit__(struct __pyx_obj_13MathFunctions_Poly *__pyx_v_self, PyObject *__pyx_v_arr, double __pyx_v_freq, double __pyx_v_coef, PyObject *__pyx_v_symbol) {
   PyObject *__pyx_v_t = NULL;
   int __pyx_r;
   __Pyx_RefNannyDeclarations
@@ -2969,7 +3205,7 @@ static int __pyx_pf_12FunctionsCPP_13MathFunctions_4Poly___cinit__(struct __pyx_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
-  /* "FunctionsCPP/MathFunctions.pyx":86
+  /* "MathFunctions.pyx":97
  *     cdef Polynomial poly
  *     def __cinit__(self, list arr = [], double freq = 1, double coef = 1, str symbol = "z"):
  *         self.poly = Polynomial(freq, coef, symbol.encode())             # <<<<<<<<<<<<<<
@@ -2978,21 +3214,21 @@ static int __pyx_pf_12FunctionsCPP_13MathFunctions_4Poly___cinit__(struct __pyx_
  */
   if (unlikely(__pyx_v_symbol == Py_None)) {
     PyErr_Format(PyExc_AttributeError, "'NoneType' object has no attribute '%.30s'", "encode");
-    __PYX_ERR(1, 86, __pyx_L1_error)
+    __PYX_ERR(1, 97, __pyx_L1_error)
   }
-  __pyx_t_1 = PyUnicode_AsEncodedString(__pyx_v_symbol, NULL, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 86, __pyx_L1_error)
+  __pyx_t_1 = PyUnicode_AsEncodedString(__pyx_v_symbol, NULL, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 97, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __pyx_convert_string_from_py_std__in_string(__pyx_t_1); if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 86, __pyx_L1_error)
+  __pyx_t_2 = __pyx_convert_string_from_py_std__in_string(__pyx_t_1); if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 97, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   try {
     __pyx_t_3 = Polynomial(__pyx_v_freq, __pyx_v_coef, __pyx_t_2);
   } catch(...) {
     __Pyx_CppExn2PyErr();
-    __PYX_ERR(1, 86, __pyx_L1_error)
+    __PYX_ERR(1, 97, __pyx_L1_error)
   }
   __pyx_v_self->poly = __pyx_t_3;
 
-  /* "FunctionsCPP/MathFunctions.pyx":87
+  /* "MathFunctions.pyx":98
  *     def __cinit__(self, list arr = [], double freq = 1, double coef = 1, str symbol = "z"):
  *         self.poly = Polynomial(freq, coef, symbol.encode())
  *         for t in arr:             # <<<<<<<<<<<<<<
@@ -3001,31 +3237,31 @@ static int __pyx_pf_12FunctionsCPP_13MathFunctions_4Poly___cinit__(struct __pyx_
  */
   if (unlikely(__pyx_v_arr == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not iterable");
-    __PYX_ERR(1, 87, __pyx_L1_error)
+    __PYX_ERR(1, 98, __pyx_L1_error)
   }
   __pyx_t_1 = __pyx_v_arr; __Pyx_INCREF(__pyx_t_1); __pyx_t_4 = 0;
   for (;;) {
     if (__pyx_t_4 >= PyList_GET_SIZE(__pyx_t_1)) break;
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-    __pyx_t_5 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_4); __Pyx_INCREF(__pyx_t_5); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(1, 87, __pyx_L1_error)
+    __pyx_t_5 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_4); __Pyx_INCREF(__pyx_t_5); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(1, 98, __pyx_L1_error)
     #else
-    __pyx_t_5 = PySequence_ITEM(__pyx_t_1, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 87, __pyx_L1_error)
+    __pyx_t_5 = PySequence_ITEM(__pyx_t_1, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 98, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     #endif
     __Pyx_XDECREF_SET(__pyx_v_t, __pyx_t_5);
     __pyx_t_5 = 0;
 
-    /* "FunctionsCPP/MathFunctions.pyx":88
+    /* "MathFunctions.pyx":99
  *         self.poly = Polynomial(freq, coef, symbol.encode())
  *         for t in arr:
  *             self.poly.push(t)             # <<<<<<<<<<<<<<
  *     def push(self, double term):
  *         self.poly.push(term)
  */
-    __pyx_t_6 = __pyx_PyFloat_AsDouble(__pyx_v_t); if (unlikely((__pyx_t_6 == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 88, __pyx_L1_error)
+    __pyx_t_6 = __pyx_PyFloat_AsDouble(__pyx_v_t); if (unlikely((__pyx_t_6 == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 99, __pyx_L1_error)
     __pyx_v_self->poly.push(__pyx_t_6);
 
-    /* "FunctionsCPP/MathFunctions.pyx":87
+    /* "MathFunctions.pyx":98
  *     def __cinit__(self, list arr = [], double freq = 1, double coef = 1, str symbol = "z"):
  *         self.poly = Polynomial(freq, coef, symbol.encode())
  *         for t in arr:             # <<<<<<<<<<<<<<
@@ -3035,7 +3271,7 @@ static int __pyx_pf_12FunctionsCPP_13MathFunctions_4Poly___cinit__(struct __pyx_
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "FunctionsCPP/MathFunctions.pyx":85
+  /* "MathFunctions.pyx":96
  * cdef class Poly:
  *     cdef Polynomial poly
  *     def __cinit__(self, list arr = [], double freq = 1, double coef = 1, str symbol = "z"):             # <<<<<<<<<<<<<<
@@ -3049,7 +3285,7 @@ static int __pyx_pf_12FunctionsCPP_13MathFunctions_4Poly___cinit__(struct __pyx_
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("FunctionsCPP.MathFunctions.Poly.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("MathFunctions.Poly.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_t);
@@ -3057,7 +3293,7 @@ static int __pyx_pf_12FunctionsCPP_13MathFunctions_4Poly___cinit__(struct __pyx_
   return __pyx_r;
 }
 
-/* "FunctionsCPP/MathFunctions.pyx":89
+/* "MathFunctions.pyx":100
  *         for t in arr:
  *             self.poly.push(t)
  *     def push(self, double term):             # <<<<<<<<<<<<<<
@@ -3066,8 +3302,8 @@ static int __pyx_pf_12FunctionsCPP_13MathFunctions_4Poly___cinit__(struct __pyx_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_3push(PyObject *__pyx_v_self, PyObject *__pyx_arg_term); /*proto*/
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_3push(PyObject *__pyx_v_self, PyObject *__pyx_arg_term) {
+static PyObject *__pyx_pw_13MathFunctions_4Poly_3push(PyObject *__pyx_v_self, PyObject *__pyx_arg_term); /*proto*/
+static PyObject *__pyx_pw_13MathFunctions_4Poly_3push(PyObject *__pyx_v_self, PyObject *__pyx_arg_term) {
   double __pyx_v_term;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -3076,27 +3312,27 @@ static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_3push(PyObject *_
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("push (wrapper)", 0);
   assert(__pyx_arg_term); {
-    __pyx_v_term = __pyx_PyFloat_AsDouble(__pyx_arg_term); if (unlikely((__pyx_v_term == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 89, __pyx_L3_error)
+    __pyx_v_term = __pyx_PyFloat_AsDouble(__pyx_arg_term); if (unlikely((__pyx_v_term == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 100, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
-  __Pyx_AddTraceback("FunctionsCPP.MathFunctions.Poly.push", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("MathFunctions.Poly.push", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_2push(((struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *)__pyx_v_self), ((double)__pyx_v_term));
+  __pyx_r = __pyx_pf_13MathFunctions_4Poly_2push(((struct __pyx_obj_13MathFunctions_Poly *)__pyx_v_self), ((double)__pyx_v_term));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_2push(struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *__pyx_v_self, double __pyx_v_term) {
+static PyObject *__pyx_pf_13MathFunctions_4Poly_2push(struct __pyx_obj_13MathFunctions_Poly *__pyx_v_self, double __pyx_v_term) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("push", 0);
 
-  /* "FunctionsCPP/MathFunctions.pyx":90
+  /* "MathFunctions.pyx":101
  *             self.poly.push(t)
  *     def push(self, double term):
  *         self.poly.push(term)             # <<<<<<<<<<<<<<
@@ -3105,7 +3341,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_2push(struct __py
  */
   __pyx_v_self->poly.push(__pyx_v_term);
 
-  /* "FunctionsCPP/MathFunctions.pyx":89
+  /* "MathFunctions.pyx":100
  *         for t in arr:
  *             self.poly.push(t)
  *     def push(self, double term):             # <<<<<<<<<<<<<<
@@ -3120,7 +3356,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_2push(struct __py
   return __pyx_r;
 }
 
-/* "FunctionsCPP/MathFunctions.pyx":91
+/* "MathFunctions.pyx":102
  *     def push(self, double term):
  *         self.poly.push(term)
  *     def print(self):             # <<<<<<<<<<<<<<
@@ -3129,24 +3365,24 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_2push(struct __py
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_5print(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_5print(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_13MathFunctions_4Poly_5print(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_13MathFunctions_4Poly_5print(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("print (wrapper)", 0);
-  __pyx_r = __pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_4print(((struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *)__pyx_v_self));
+  __pyx_r = __pyx_pf_13MathFunctions_4Poly_4print(((struct __pyx_obj_13MathFunctions_Poly *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_4print(struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *__pyx_v_self) {
+static PyObject *__pyx_pf_13MathFunctions_4Poly_4print(struct __pyx_obj_13MathFunctions_Poly *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("print", 0);
 
-  /* "FunctionsCPP/MathFunctions.pyx":92
+  /* "MathFunctions.pyx":103
  *         self.poly.push(term)
  *     def print(self):
  *         self.poly.print()             # <<<<<<<<<<<<<<
@@ -3155,7 +3391,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_4print(struct __p
  */
   __pyx_v_self->poly.print();
 
-  /* "FunctionsCPP/MathFunctions.pyx":91
+  /* "MathFunctions.pyx":102
  *     def push(self, double term):
  *         self.poly.push(term)
  *     def print(self):             # <<<<<<<<<<<<<<
@@ -3170,7 +3406,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_4print(struct __p
   return __pyx_r;
 }
 
-/* "FunctionsCPP/MathFunctions.pyx":93
+/* "MathFunctions.pyx":104
  *     def print(self):
  *         self.poly.print()
  *     def __call__(self, double z):             # <<<<<<<<<<<<<<
@@ -3179,8 +3415,8 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_4print(struct __p
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_7__call__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_7__call__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_13MathFunctions_4Poly_7__call__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyObject *__pyx_pw_13MathFunctions_4Poly_7__call__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   double __pyx_v_z;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -3207,31 +3443,31 @@ static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_7__call__(PyObjec
         else goto __pyx_L5_argtuple_error;
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__call__") < 0)) __PYX_ERR(1, 93, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__call__") < 0)) __PYX_ERR(1, 104, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 1) {
       goto __pyx_L5_argtuple_error;
     } else {
       values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
     }
-    __pyx_v_z = __pyx_PyFloat_AsDouble(values[0]); if (unlikely((__pyx_v_z == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 93, __pyx_L3_error)
+    __pyx_v_z = __pyx_PyFloat_AsDouble(values[0]); if (unlikely((__pyx_v_z == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 104, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__call__", 1, 1, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 93, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__call__", 1, 1, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 104, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("FunctionsCPP.MathFunctions.Poly.__call__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("MathFunctions.Poly.__call__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_6__call__(((struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *)__pyx_v_self), __pyx_v_z);
+  __pyx_r = __pyx_pf_13MathFunctions_4Poly_6__call__(((struct __pyx_obj_13MathFunctions_Poly *)__pyx_v_self), __pyx_v_z);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_6__call__(struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *__pyx_v_self, double __pyx_v_z) {
+static PyObject *__pyx_pf_13MathFunctions_4Poly_6__call__(struct __pyx_obj_13MathFunctions_Poly *__pyx_v_self, double __pyx_v_z) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -3240,7 +3476,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_6__call__(struct 
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__call__", 0);
 
-  /* "FunctionsCPP/MathFunctions.pyx":94
+  /* "MathFunctions.pyx":105
  *         self.poly.print()
  *     def __call__(self, double z):
  *         return self.poly.get(z)             # <<<<<<<<<<<<<<
@@ -3248,13 +3484,13 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_6__call__(struct 
  *         return self.poly.str().decode('utf-8')
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->poly.operator()(__pyx_v_z)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 94, __pyx_L1_error)
+  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->poly.operator()(__pyx_v_z)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 105, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "FunctionsCPP/MathFunctions.pyx":93
+  /* "MathFunctions.pyx":104
  *     def print(self):
  *         self.poly.print()
  *     def __call__(self, double z):             # <<<<<<<<<<<<<<
@@ -3265,7 +3501,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_6__call__(struct 
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("FunctionsCPP.MathFunctions.Poly.__call__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("MathFunctions.Poly.__call__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -3273,7 +3509,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_6__call__(struct 
   return __pyx_r;
 }
 
-/* "FunctionsCPP/MathFunctions.pyx":95
+/* "MathFunctions.pyx":106
  *     def __call__(self, double z):
  *         return self.poly.get(z)
  *     def __str__(self):             # <<<<<<<<<<<<<<
@@ -3282,19 +3518,19 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_6__call__(struct 
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_9__str__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_9__str__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_13MathFunctions_4Poly_9__str__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_13MathFunctions_4Poly_9__str__(PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__str__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_8__str__(((struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *)__pyx_v_self));
+  __pyx_r = __pyx_pf_13MathFunctions_4Poly_8__str__(((struct __pyx_obj_13MathFunctions_Poly *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_8__str__(struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *__pyx_v_self) {
+static PyObject *__pyx_pf_13MathFunctions_4Poly_8__str__(struct __pyx_obj_13MathFunctions_Poly *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -3303,7 +3539,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_8__str__(struct _
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__str__", 0);
 
-  /* "FunctionsCPP/MathFunctions.pyx":96
+  /* "MathFunctions.pyx":107
  *         return self.poly.get(z)
  *     def __str__(self):
  *         return self.poly.str().decode('utf-8')             # <<<<<<<<<<<<<<
@@ -3311,13 +3547,13 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_8__str__(struct _
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_decode_cpp_string(__pyx_v_self->poly.str(), 0, PY_SSIZE_T_MAX, NULL, NULL, PyUnicode_DecodeUTF8); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 96, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_decode_cpp_string(__pyx_v_self->poly.str(), 0, PY_SSIZE_T_MAX, NULL, NULL, PyUnicode_DecodeUTF8); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 107, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "FunctionsCPP/MathFunctions.pyx":95
+  /* "MathFunctions.pyx":106
  *     def __call__(self, double z):
  *         return self.poly.get(z)
  *     def __str__(self):             # <<<<<<<<<<<<<<
@@ -3328,7 +3564,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_8__str__(struct _
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("FunctionsCPP.MathFunctions.Poly.__str__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("MathFunctions.Poly.__str__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -3336,7 +3572,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_8__str__(struct _
   return __pyx_r;
 }
 
-/* "FunctionsCPP/MathFunctions.pyx":100
+/* "MathFunctions.pyx":111
  * 
  *     @staticmethod
  *     cdef create(Polynomial polyn):             # <<<<<<<<<<<<<<
@@ -3344,8 +3580,8 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_8__str__(struct _
  *         fn.poly = polyn
  */
 
-static PyObject *__pyx_f_12FunctionsCPP_13MathFunctions_4Poly_create(Polynomial __pyx_v_polyn) {
-  struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *__pyx_v_fn = NULL;
+static PyObject *__pyx_f_13MathFunctions_4Poly_create(Polynomial __pyx_v_polyn) {
+  struct __pyx_obj_13MathFunctions_Poly *__pyx_v_fn = NULL;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -3354,19 +3590,19 @@ static PyObject *__pyx_f_12FunctionsCPP_13MathFunctions_4Poly_create(Polynomial 
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("create", 0);
 
-  /* "FunctionsCPP/MathFunctions.pyx":101
+  /* "MathFunctions.pyx":112
  *     @staticmethod
  *     cdef create(Polynomial polyn):
  *         fn = Poly()             # <<<<<<<<<<<<<<
  *         fn.poly = polyn
  *         return fn
  */
-  __pyx_t_1 = __Pyx_PyObject_CallNoArg(((PyObject *)__pyx_ptype_12FunctionsCPP_13MathFunctions_Poly)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 101, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_CallNoArg(((PyObject *)__pyx_ptype_13MathFunctions_Poly)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 112, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_v_fn = ((struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *)__pyx_t_1);
+  __pyx_v_fn = ((struct __pyx_obj_13MathFunctions_Poly *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "FunctionsCPP/MathFunctions.pyx":102
+  /* "MathFunctions.pyx":113
  *     cdef create(Polynomial polyn):
  *         fn = Poly()
  *         fn.poly = polyn             # <<<<<<<<<<<<<<
@@ -3375,7 +3611,7 @@ static PyObject *__pyx_f_12FunctionsCPP_13MathFunctions_4Poly_create(Polynomial 
  */
   __pyx_v_fn->poly = __pyx_v_polyn;
 
-  /* "FunctionsCPP/MathFunctions.pyx":103
+  /* "MathFunctions.pyx":114
  *         fn = Poly()
  *         fn.poly = polyn
  *         return fn             # <<<<<<<<<<<<<<
@@ -3387,7 +3623,7 @@ static PyObject *__pyx_f_12FunctionsCPP_13MathFunctions_4Poly_create(Polynomial 
   __pyx_r = ((PyObject *)__pyx_v_fn);
   goto __pyx_L0;
 
-  /* "FunctionsCPP/MathFunctions.pyx":100
+  /* "MathFunctions.pyx":111
  * 
  *     @staticmethod
  *     cdef create(Polynomial polyn):             # <<<<<<<<<<<<<<
@@ -3398,7 +3634,7 @@ static PyObject *__pyx_f_12FunctionsCPP_13MathFunctions_4Poly_create(Polynomial 
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("FunctionsCPP.MathFunctions.Poly.create", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("MathFunctions.Poly.create", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = 0;
   __pyx_L0:;
   __Pyx_XDECREF((PyObject *)__pyx_v_fn);
@@ -3407,7 +3643,7 @@ static PyObject *__pyx_f_12FunctionsCPP_13MathFunctions_4Poly_create(Polynomial 
   return __pyx_r;
 }
 
-/* "FunctionsCPP/MathFunctions.pyx":105
+/* "MathFunctions.pyx":116
  *         return fn
  * 
  *     def __add__(Poly left, Poly right):             # <<<<<<<<<<<<<<
@@ -3416,17 +3652,17 @@ static PyObject *__pyx_f_12FunctionsCPP_13MathFunctions_4Poly_create(Polynomial 
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_11__add__(PyObject *__pyx_v_left, PyObject *__pyx_v_right); /*proto*/
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_11__add__(PyObject *__pyx_v_left, PyObject *__pyx_v_right) {
+static PyObject *__pyx_pw_13MathFunctions_4Poly_11__add__(PyObject *__pyx_v_left, PyObject *__pyx_v_right); /*proto*/
+static PyObject *__pyx_pw_13MathFunctions_4Poly_11__add__(PyObject *__pyx_v_left, PyObject *__pyx_v_right) {
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__add__ (wrapper)", 0);
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_left), __pyx_ptype_12FunctionsCPP_13MathFunctions_Poly, 1, "left", 0))) __PYX_ERR(1, 105, __pyx_L1_error)
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_right), __pyx_ptype_12FunctionsCPP_13MathFunctions_Poly, 1, "right", 0))) __PYX_ERR(1, 105, __pyx_L1_error)
-  __pyx_r = __pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_10__add__(((struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *)__pyx_v_left), ((struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *)__pyx_v_right));
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_left), __pyx_ptype_13MathFunctions_Poly, 1, "left", 0))) __PYX_ERR(1, 116, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_right), __pyx_ptype_13MathFunctions_Poly, 1, "right", 0))) __PYX_ERR(1, 116, __pyx_L1_error)
+  __pyx_r = __pyx_pf_13MathFunctions_4Poly_10__add__(((struct __pyx_obj_13MathFunctions_Poly *)__pyx_v_left), ((struct __pyx_obj_13MathFunctions_Poly *)__pyx_v_right));
 
   /* function exit code */
   goto __pyx_L0;
@@ -3437,7 +3673,7 @@ static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_11__add__(PyObjec
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_10__add__(struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *__pyx_v_left, struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *__pyx_v_right) {
+static PyObject *__pyx_pf_13MathFunctions_4Poly_10__add__(struct __pyx_obj_13MathFunctions_Poly *__pyx_v_left, struct __pyx_obj_13MathFunctions_Poly *__pyx_v_right) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -3446,7 +3682,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_10__add__(struct 
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__add__", 0);
 
-  /* "FunctionsCPP/MathFunctions.pyx":106
+  /* "MathFunctions.pyx":117
  * 
  *     def __add__(Poly left, Poly right):
  *         return Poly.create(left.poly + right.poly)             # <<<<<<<<<<<<<<
@@ -3454,13 +3690,13 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_10__add__(struct 
  *     __radd__ = __add__
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_12FunctionsCPP_13MathFunctions_4Poly_create((__pyx_v_left->poly + __pyx_v_right->poly)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 106, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_13MathFunctions_4Poly_create((__pyx_v_left->poly + __pyx_v_right->poly)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 117, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "FunctionsCPP/MathFunctions.pyx":105
+  /* "MathFunctions.pyx":116
  *         return fn
  * 
  *     def __add__(Poly left, Poly right):             # <<<<<<<<<<<<<<
@@ -3471,7 +3707,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_10__add__(struct 
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("FunctionsCPP.MathFunctions.Poly.__add__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("MathFunctions.Poly.__add__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -3479,7 +3715,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_10__add__(struct 
   return __pyx_r;
 }
 
-/* "FunctionsCPP/MathFunctions.pyx":110
+/* "MathFunctions.pyx":121
  *     __radd__ = __add__
  * 
  *     def derivative(self):             # <<<<<<<<<<<<<<
@@ -3488,19 +3724,19 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_10__add__(struct 
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_13derivative(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_13derivative(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_13MathFunctions_4Poly_13derivative(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_13MathFunctions_4Poly_13derivative(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("derivative (wrapper)", 0);
-  __pyx_r = __pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_12derivative(((struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *)__pyx_v_self));
+  __pyx_r = __pyx_pf_13MathFunctions_4Poly_12derivative(((struct __pyx_obj_13MathFunctions_Poly *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_12derivative(struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *__pyx_v_self) {
+static PyObject *__pyx_pf_13MathFunctions_4Poly_12derivative(struct __pyx_obj_13MathFunctions_Poly *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -3509,7 +3745,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_12derivative(stru
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("derivative", 0);
 
-  /* "FunctionsCPP/MathFunctions.pyx":111
+  /* "MathFunctions.pyx":122
  * 
  *     def derivative(self):
  *         return Poly.create(self.poly.derivative())             # <<<<<<<<<<<<<<
@@ -3517,13 +3753,13 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_12derivative(stru
  *     def integral(self, double C = 0):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_12FunctionsCPP_13MathFunctions_4Poly_create(__pyx_v_self->poly.derivative()); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 111, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_13MathFunctions_4Poly_create(__pyx_v_self->poly.derivative()); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 122, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "FunctionsCPP/MathFunctions.pyx":110
+  /* "MathFunctions.pyx":121
  *     __radd__ = __add__
  * 
  *     def derivative(self):             # <<<<<<<<<<<<<<
@@ -3534,7 +3770,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_12derivative(stru
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("FunctionsCPP.MathFunctions.Poly.derivative", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("MathFunctions.Poly.derivative", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -3542,7 +3778,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_12derivative(stru
   return __pyx_r;
 }
 
-/* "FunctionsCPP/MathFunctions.pyx":113
+/* "MathFunctions.pyx":124
  *         return Poly.create(self.poly.derivative())
  * 
  *     def integral(self, double C = 0):             # <<<<<<<<<<<<<<
@@ -3551,8 +3787,8 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_12derivative(stru
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_15integral(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_15integral(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_13MathFunctions_4Poly_15integral(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyObject *__pyx_pw_13MathFunctions_4Poly_15integral(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   double __pyx_v_C;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -3581,7 +3817,7 @@ static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_15integral(PyObje
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "integral") < 0)) __PYX_ERR(1, 113, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "integral") < 0)) __PYX_ERR(1, 124, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -3592,27 +3828,27 @@ static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_15integral(PyObje
       }
     }
     if (values[0]) {
-      __pyx_v_C = __pyx_PyFloat_AsDouble(values[0]); if (unlikely((__pyx_v_C == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 113, __pyx_L3_error)
+      __pyx_v_C = __pyx_PyFloat_AsDouble(values[0]); if (unlikely((__pyx_v_C == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 124, __pyx_L3_error)
     } else {
       __pyx_v_C = ((double)0.0);
     }
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("integral", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 113, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("integral", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 124, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("FunctionsCPP.MathFunctions.Poly.integral", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("MathFunctions.Poly.integral", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_14integral(((struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *)__pyx_v_self), __pyx_v_C);
+  __pyx_r = __pyx_pf_13MathFunctions_4Poly_14integral(((struct __pyx_obj_13MathFunctions_Poly *)__pyx_v_self), __pyx_v_C);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_14integral(struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *__pyx_v_self, double __pyx_v_C) {
+static PyObject *__pyx_pf_13MathFunctions_4Poly_14integral(struct __pyx_obj_13MathFunctions_Poly *__pyx_v_self, double __pyx_v_C) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -3621,7 +3857,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_14integral(struct
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("integral", 0);
 
-  /* "FunctionsCPP/MathFunctions.pyx":114
+  /* "MathFunctions.pyx":125
  * 
  *     def integral(self, double C = 0):
  *         return Poly.create(self.poly.integral(C))             # <<<<<<<<<<<<<<
@@ -3629,13 +3865,13 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_14integral(struct
  *         return Poly.create(-self.poly)
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_12FunctionsCPP_13MathFunctions_4Poly_create(__pyx_v_self->poly.integral(__pyx_v_C)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 114, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_13MathFunctions_4Poly_create(__pyx_v_self->poly.integral(__pyx_v_C)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 125, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "FunctionsCPP/MathFunctions.pyx":113
+  /* "MathFunctions.pyx":124
  *         return Poly.create(self.poly.derivative())
  * 
  *     def integral(self, double C = 0):             # <<<<<<<<<<<<<<
@@ -3646,7 +3882,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_14integral(struct
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("FunctionsCPP.MathFunctions.Poly.integral", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("MathFunctions.Poly.integral", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -3654,7 +3890,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_14integral(struct
   return __pyx_r;
 }
 
-/* "FunctionsCPP/MathFunctions.pyx":115
+/* "MathFunctions.pyx":126
  *     def integral(self, double C = 0):
  *         return Poly.create(self.poly.integral(C))
  *     def __neg__(self):             # <<<<<<<<<<<<<<
@@ -3663,19 +3899,19 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_14integral(struct
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_17__neg__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_17__neg__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_13MathFunctions_4Poly_17__neg__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_13MathFunctions_4Poly_17__neg__(PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__neg__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_16__neg__(((struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *)__pyx_v_self));
+  __pyx_r = __pyx_pf_13MathFunctions_4Poly_16__neg__(((struct __pyx_obj_13MathFunctions_Poly *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_16__neg__(struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *__pyx_v_self) {
+static PyObject *__pyx_pf_13MathFunctions_4Poly_16__neg__(struct __pyx_obj_13MathFunctions_Poly *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -3684,7 +3920,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_16__neg__(struct 
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__neg__", 0);
 
-  /* "FunctionsCPP/MathFunctions.pyx":116
+  /* "MathFunctions.pyx":127
  *         return Poly.create(self.poly.integral(C))
  *     def __neg__(self):
  *         return Poly.create(-self.poly)             # <<<<<<<<<<<<<<
@@ -3692,13 +3928,13 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_16__neg__(struct 
  *         return Poly.create(left.poly + (-right.poly))
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_12FunctionsCPP_13MathFunctions_4Poly_create((-__pyx_v_self->poly)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 116, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_13MathFunctions_4Poly_create((-__pyx_v_self->poly)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 127, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "FunctionsCPP/MathFunctions.pyx":115
+  /* "MathFunctions.pyx":126
  *     def integral(self, double C = 0):
  *         return Poly.create(self.poly.integral(C))
  *     def __neg__(self):             # <<<<<<<<<<<<<<
@@ -3709,7 +3945,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_16__neg__(struct 
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("FunctionsCPP.MathFunctions.Poly.__neg__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("MathFunctions.Poly.__neg__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -3717,7 +3953,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_16__neg__(struct 
   return __pyx_r;
 }
 
-/* "FunctionsCPP/MathFunctions.pyx":117
+/* "MathFunctions.pyx":128
  *     def __neg__(self):
  *         return Poly.create(-self.poly)
  *     def __sub__(Poly left, Poly right):             # <<<<<<<<<<<<<<
@@ -3726,17 +3962,17 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_16__neg__(struct 
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_19__sub__(PyObject *__pyx_v_left, PyObject *__pyx_v_right); /*proto*/
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_19__sub__(PyObject *__pyx_v_left, PyObject *__pyx_v_right) {
+static PyObject *__pyx_pw_13MathFunctions_4Poly_19__sub__(PyObject *__pyx_v_left, PyObject *__pyx_v_right); /*proto*/
+static PyObject *__pyx_pw_13MathFunctions_4Poly_19__sub__(PyObject *__pyx_v_left, PyObject *__pyx_v_right) {
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__sub__ (wrapper)", 0);
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_left), __pyx_ptype_12FunctionsCPP_13MathFunctions_Poly, 1, "left", 0))) __PYX_ERR(1, 117, __pyx_L1_error)
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_right), __pyx_ptype_12FunctionsCPP_13MathFunctions_Poly, 1, "right", 0))) __PYX_ERR(1, 117, __pyx_L1_error)
-  __pyx_r = __pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_18__sub__(((struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *)__pyx_v_left), ((struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *)__pyx_v_right));
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_left), __pyx_ptype_13MathFunctions_Poly, 1, "left", 0))) __PYX_ERR(1, 128, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_right), __pyx_ptype_13MathFunctions_Poly, 1, "right", 0))) __PYX_ERR(1, 128, __pyx_L1_error)
+  __pyx_r = __pyx_pf_13MathFunctions_4Poly_18__sub__(((struct __pyx_obj_13MathFunctions_Poly *)__pyx_v_left), ((struct __pyx_obj_13MathFunctions_Poly *)__pyx_v_right));
 
   /* function exit code */
   goto __pyx_L0;
@@ -3747,7 +3983,7 @@ static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_19__sub__(PyObjec
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_18__sub__(struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *__pyx_v_left, struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *__pyx_v_right) {
+static PyObject *__pyx_pf_13MathFunctions_4Poly_18__sub__(struct __pyx_obj_13MathFunctions_Poly *__pyx_v_left, struct __pyx_obj_13MathFunctions_Poly *__pyx_v_right) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -3756,7 +3992,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_18__sub__(struct 
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__sub__", 0);
 
-  /* "FunctionsCPP/MathFunctions.pyx":118
+  /* "MathFunctions.pyx":129
  *         return Poly.create(-self.poly)
  *     def __sub__(Poly left, Poly right):
  *         return Poly.create(left.poly + (-right.poly))             # <<<<<<<<<<<<<<
@@ -3764,13 +4000,13 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_18__sub__(struct 
  *         return Poly.create(-left.poly + right.poly)
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_12FunctionsCPP_13MathFunctions_4Poly_create((__pyx_v_left->poly + (-__pyx_v_right->poly))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 118, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_13MathFunctions_4Poly_create((__pyx_v_left->poly + (-__pyx_v_right->poly))); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 129, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "FunctionsCPP/MathFunctions.pyx":117
+  /* "MathFunctions.pyx":128
  *     def __neg__(self):
  *         return Poly.create(-self.poly)
  *     def __sub__(Poly left, Poly right):             # <<<<<<<<<<<<<<
@@ -3781,7 +4017,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_18__sub__(struct 
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("FunctionsCPP.MathFunctions.Poly.__sub__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("MathFunctions.Poly.__sub__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -3789,7 +4025,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_18__sub__(struct 
   return __pyx_r;
 }
 
-/* "FunctionsCPP/MathFunctions.pyx":119
+/* "MathFunctions.pyx":130
  *     def __sub__(Poly left, Poly right):
  *         return Poly.create(left.poly + (-right.poly))
  *     def __rsub__(Poly left, Poly right):             # <<<<<<<<<<<<<<
@@ -3798,16 +4034,16 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_18__sub__(struct 
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_21__rsub__(PyObject *__pyx_v_left, PyObject *__pyx_v_right); /*proto*/
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_21__rsub__(PyObject *__pyx_v_left, PyObject *__pyx_v_right) {
+static PyObject *__pyx_pw_13MathFunctions_4Poly_21__rsub__(PyObject *__pyx_v_left, PyObject *__pyx_v_right); /*proto*/
+static PyObject *__pyx_pw_13MathFunctions_4Poly_21__rsub__(PyObject *__pyx_v_left, PyObject *__pyx_v_right) {
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__rsub__ (wrapper)", 0);
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_right), __pyx_ptype_12FunctionsCPP_13MathFunctions_Poly, 1, "right", 0))) __PYX_ERR(1, 119, __pyx_L1_error)
-  __pyx_r = __pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_20__rsub__(((struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *)__pyx_v_left), ((struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *)__pyx_v_right));
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_right), __pyx_ptype_13MathFunctions_Poly, 1, "right", 0))) __PYX_ERR(1, 130, __pyx_L1_error)
+  __pyx_r = __pyx_pf_13MathFunctions_4Poly_20__rsub__(((struct __pyx_obj_13MathFunctions_Poly *)__pyx_v_left), ((struct __pyx_obj_13MathFunctions_Poly *)__pyx_v_right));
 
   /* function exit code */
   goto __pyx_L0;
@@ -3818,7 +4054,7 @@ static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_21__rsub__(PyObje
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_20__rsub__(struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *__pyx_v_left, struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *__pyx_v_right) {
+static PyObject *__pyx_pf_13MathFunctions_4Poly_20__rsub__(struct __pyx_obj_13MathFunctions_Poly *__pyx_v_left, struct __pyx_obj_13MathFunctions_Poly *__pyx_v_right) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -3827,21 +4063,21 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_20__rsub__(struct
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__rsub__", 0);
 
-  /* "FunctionsCPP/MathFunctions.pyx":120
+  /* "MathFunctions.pyx":131
  *         return Poly.create(left.poly + (-right.poly))
  *     def __rsub__(Poly left, Poly right):
  *         return Poly.create(-left.poly + right.poly)             # <<<<<<<<<<<<<<
  *     def __mul__(Poly a, double b):
- *         return Poly.create(a.poly.div(b))
+ *         return Poly.create(a.poly.mul(b))
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_12FunctionsCPP_13MathFunctions_4Poly_create(((-__pyx_v_left->poly) + __pyx_v_right->poly)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 120, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_13MathFunctions_4Poly_create(((-__pyx_v_left->poly) + __pyx_v_right->poly)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 131, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "FunctionsCPP/MathFunctions.pyx":119
+  /* "MathFunctions.pyx":130
  *     def __sub__(Poly left, Poly right):
  *         return Poly.create(left.poly + (-right.poly))
  *     def __rsub__(Poly left, Poly right):             # <<<<<<<<<<<<<<
@@ -3852,7 +4088,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_20__rsub__(struct
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("FunctionsCPP.MathFunctions.Poly.__rsub__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("MathFunctions.Poly.__rsub__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -3860,17 +4096,17 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_20__rsub__(struct
   return __pyx_r;
 }
 
-/* "FunctionsCPP/MathFunctions.pyx":121
+/* "MathFunctions.pyx":132
  *     def __rsub__(Poly left, Poly right):
  *         return Poly.create(-left.poly + right.poly)
  *     def __mul__(Poly a, double b):             # <<<<<<<<<<<<<<
- *         return Poly.create(a.poly.div(b))
- *     __rmul__ = __mul__
+ *         return Poly.create(a.poly.mul(b))
+ *     def max(self, double a, double b):
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_23__mul__(PyObject *__pyx_v_a, PyObject *__pyx_arg_b); /*proto*/
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_23__mul__(PyObject *__pyx_v_a, PyObject *__pyx_arg_b) {
+static PyObject *__pyx_pw_13MathFunctions_4Poly_23__mul__(PyObject *__pyx_v_a, PyObject *__pyx_arg_b); /*proto*/
+static PyObject *__pyx_pw_13MathFunctions_4Poly_23__mul__(PyObject *__pyx_v_a, PyObject *__pyx_arg_b) {
   double __pyx_v_b;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -3879,16 +4115,16 @@ static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_23__mul__(PyObjec
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__mul__ (wrapper)", 0);
   assert(__pyx_arg_b); {
-    __pyx_v_b = __pyx_PyFloat_AsDouble(__pyx_arg_b); if (unlikely((__pyx_v_b == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 121, __pyx_L3_error)
+    __pyx_v_b = __pyx_PyFloat_AsDouble(__pyx_arg_b); if (unlikely((__pyx_v_b == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 132, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
-  __Pyx_AddTraceback("FunctionsCPP.MathFunctions.Poly.__mul__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("MathFunctions.Poly.__mul__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_a), __pyx_ptype_12FunctionsCPP_13MathFunctions_Poly, 1, "a", 0))) __PYX_ERR(1, 121, __pyx_L1_error)
-  __pyx_r = __pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_22__mul__(((struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *)__pyx_v_a), ((double)__pyx_v_b));
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_a), __pyx_ptype_13MathFunctions_Poly, 1, "a", 0))) __PYX_ERR(1, 132, __pyx_L1_error)
+  __pyx_r = __pyx_pf_13MathFunctions_4Poly_22__mul__(((struct __pyx_obj_13MathFunctions_Poly *)__pyx_v_a), ((double)__pyx_v_b));
 
   /* function exit code */
   goto __pyx_L0;
@@ -3899,7 +4135,7 @@ static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_23__mul__(PyObjec
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_22__mul__(struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *__pyx_v_a, double __pyx_v_b) {
+static PyObject *__pyx_pf_13MathFunctions_4Poly_22__mul__(struct __pyx_obj_13MathFunctions_Poly *__pyx_v_a, double __pyx_v_b) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -3908,32 +4144,32 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_22__mul__(struct 
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__mul__", 0);
 
-  /* "FunctionsCPP/MathFunctions.pyx":122
+  /* "MathFunctions.pyx":133
  *         return Poly.create(-left.poly + right.poly)
  *     def __mul__(Poly a, double b):
- *         return Poly.create(a.poly.div(b))             # <<<<<<<<<<<<<<
- *     __rmul__ = __mul__
- *     __repr__ = __str__
+ *         return Poly.create(a.poly.mul(b))             # <<<<<<<<<<<<<<
+ *     def max(self, double a, double b):
+ *         return self.poly.max(a, b)
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_12FunctionsCPP_13MathFunctions_4Poly_create(__pyx_v_a->poly.operator/(__pyx_v_b)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 122, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_13MathFunctions_4Poly_create(__pyx_v_a->poly.operator*(__pyx_v_b)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 133, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "FunctionsCPP/MathFunctions.pyx":121
+  /* "MathFunctions.pyx":132
  *     def __rsub__(Poly left, Poly right):
  *         return Poly.create(-left.poly + right.poly)
  *     def __mul__(Poly a, double b):             # <<<<<<<<<<<<<<
- *         return Poly.create(a.poly.div(b))
- *     __rmul__ = __mul__
+ *         return Poly.create(a.poly.mul(b))
+ *     def max(self, double a, double b):
  */
 
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("FunctionsCPP.MathFunctions.Poly.__mul__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("MathFunctions.Poly.__mul__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -3941,7 +4177,235 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_22__mul__(struct 
   return __pyx_r;
 }
 
-/* "FunctionsCPP/MathFunctions.pyx":126
+/* "MathFunctions.pyx":134
+ *     def __mul__(Poly a, double b):
+ *         return Poly.create(a.poly.mul(b))
+ *     def max(self, double a, double b):             # <<<<<<<<<<<<<<
+ *         return self.poly.max(a, b)
+ *     def min(self, double a, double b):
+ */
+
+/* Python wrapper */
+static PyObject *__pyx_pw_13MathFunctions_4Poly_25max(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyObject *__pyx_pw_13MathFunctions_4Poly_25max(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+  double __pyx_v_a;
+  double __pyx_v_b;
+  int __pyx_lineno = 0;
+  const char *__pyx_filename = NULL;
+  int __pyx_clineno = 0;
+  PyObject *__pyx_r = 0;
+  __Pyx_RefNannyDeclarations
+  __Pyx_RefNannySetupContext("max (wrapper)", 0);
+  {
+    static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_a,&__pyx_n_s_b,0};
+    PyObject* values[2] = {0,0};
+    if (unlikely(__pyx_kwds)) {
+      Py_ssize_t kw_args;
+      const Py_ssize_t pos_args = PyTuple_GET_SIZE(__pyx_args);
+      switch (pos_args) {
+        case  2: values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
+        CYTHON_FALLTHROUGH;
+        case  1: values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
+        CYTHON_FALLTHROUGH;
+        case  0: break;
+        default: goto __pyx_L5_argtuple_error;
+      }
+      kw_args = PyDict_Size(__pyx_kwds);
+      switch (pos_args) {
+        case  0:
+        if (likely((values[0] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_a)) != 0)) kw_args--;
+        else goto __pyx_L5_argtuple_error;
+        CYTHON_FALLTHROUGH;
+        case  1:
+        if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_b)) != 0)) kw_args--;
+        else {
+          __Pyx_RaiseArgtupleInvalid("max", 1, 2, 2, 1); __PYX_ERR(1, 134, __pyx_L3_error)
+        }
+      }
+      if (unlikely(kw_args > 0)) {
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "max") < 0)) __PYX_ERR(1, 134, __pyx_L3_error)
+      }
+    } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
+      goto __pyx_L5_argtuple_error;
+    } else {
+      values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
+      values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
+    }
+    __pyx_v_a = __pyx_PyFloat_AsDouble(values[0]); if (unlikely((__pyx_v_a == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 134, __pyx_L3_error)
+    __pyx_v_b = __pyx_PyFloat_AsDouble(values[1]); if (unlikely((__pyx_v_b == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 134, __pyx_L3_error)
+  }
+  goto __pyx_L4_argument_unpacking_done;
+  __pyx_L5_argtuple_error:;
+  __Pyx_RaiseArgtupleInvalid("max", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 134, __pyx_L3_error)
+  __pyx_L3_error:;
+  __Pyx_AddTraceback("MathFunctions.Poly.max", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_RefNannyFinishContext();
+  return NULL;
+  __pyx_L4_argument_unpacking_done:;
+  __pyx_r = __pyx_pf_13MathFunctions_4Poly_24max(((struct __pyx_obj_13MathFunctions_Poly *)__pyx_v_self), __pyx_v_a, __pyx_v_b);
+
+  /* function exit code */
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+static PyObject *__pyx_pf_13MathFunctions_4Poly_24max(struct __pyx_obj_13MathFunctions_Poly *__pyx_v_self, double __pyx_v_a, double __pyx_v_b) {
+  PyObject *__pyx_r = NULL;
+  __Pyx_RefNannyDeclarations
+  PyObject *__pyx_t_1 = NULL;
+  int __pyx_lineno = 0;
+  const char *__pyx_filename = NULL;
+  int __pyx_clineno = 0;
+  __Pyx_RefNannySetupContext("max", 0);
+
+  /* "MathFunctions.pyx":135
+ *         return Poly.create(a.poly.mul(b))
+ *     def max(self, double a, double b):
+ *         return self.poly.max(a, b)             # <<<<<<<<<<<<<<
+ *     def min(self, double a, double b):
+ *         return self.poly.min(a, b)
+ */
+  __Pyx_XDECREF(__pyx_r);
+  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->poly.max(__pyx_v_a, __pyx_v_b)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 135, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_r = __pyx_t_1;
+  __pyx_t_1 = 0;
+  goto __pyx_L0;
+
+  /* "MathFunctions.pyx":134
+ *     def __mul__(Poly a, double b):
+ *         return Poly.create(a.poly.mul(b))
+ *     def max(self, double a, double b):             # <<<<<<<<<<<<<<
+ *         return self.poly.max(a, b)
+ *     def min(self, double a, double b):
+ */
+
+  /* function exit code */
+  __pyx_L1_error:;
+  __Pyx_XDECREF(__pyx_t_1);
+  __Pyx_AddTraceback("MathFunctions.Poly.max", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __pyx_r = NULL;
+  __pyx_L0:;
+  __Pyx_XGIVEREF(__pyx_r);
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+/* "MathFunctions.pyx":136
+ *     def max(self, double a, double b):
+ *         return self.poly.max(a, b)
+ *     def min(self, double a, double b):             # <<<<<<<<<<<<<<
+ *         return self.poly.min(a, b)
+ * 
+ */
+
+/* Python wrapper */
+static PyObject *__pyx_pw_13MathFunctions_4Poly_27min(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyObject *__pyx_pw_13MathFunctions_4Poly_27min(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+  double __pyx_v_a;
+  double __pyx_v_b;
+  int __pyx_lineno = 0;
+  const char *__pyx_filename = NULL;
+  int __pyx_clineno = 0;
+  PyObject *__pyx_r = 0;
+  __Pyx_RefNannyDeclarations
+  __Pyx_RefNannySetupContext("min (wrapper)", 0);
+  {
+    static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_a,&__pyx_n_s_b,0};
+    PyObject* values[2] = {0,0};
+    if (unlikely(__pyx_kwds)) {
+      Py_ssize_t kw_args;
+      const Py_ssize_t pos_args = PyTuple_GET_SIZE(__pyx_args);
+      switch (pos_args) {
+        case  2: values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
+        CYTHON_FALLTHROUGH;
+        case  1: values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
+        CYTHON_FALLTHROUGH;
+        case  0: break;
+        default: goto __pyx_L5_argtuple_error;
+      }
+      kw_args = PyDict_Size(__pyx_kwds);
+      switch (pos_args) {
+        case  0:
+        if (likely((values[0] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_a)) != 0)) kw_args--;
+        else goto __pyx_L5_argtuple_error;
+        CYTHON_FALLTHROUGH;
+        case  1:
+        if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_b)) != 0)) kw_args--;
+        else {
+          __Pyx_RaiseArgtupleInvalid("min", 1, 2, 2, 1); __PYX_ERR(1, 136, __pyx_L3_error)
+        }
+      }
+      if (unlikely(kw_args > 0)) {
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "min") < 0)) __PYX_ERR(1, 136, __pyx_L3_error)
+      }
+    } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
+      goto __pyx_L5_argtuple_error;
+    } else {
+      values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
+      values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
+    }
+    __pyx_v_a = __pyx_PyFloat_AsDouble(values[0]); if (unlikely((__pyx_v_a == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 136, __pyx_L3_error)
+    __pyx_v_b = __pyx_PyFloat_AsDouble(values[1]); if (unlikely((__pyx_v_b == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 136, __pyx_L3_error)
+  }
+  goto __pyx_L4_argument_unpacking_done;
+  __pyx_L5_argtuple_error:;
+  __Pyx_RaiseArgtupleInvalid("min", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 136, __pyx_L3_error)
+  __pyx_L3_error:;
+  __Pyx_AddTraceback("MathFunctions.Poly.min", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_RefNannyFinishContext();
+  return NULL;
+  __pyx_L4_argument_unpacking_done:;
+  __pyx_r = __pyx_pf_13MathFunctions_4Poly_26min(((struct __pyx_obj_13MathFunctions_Poly *)__pyx_v_self), __pyx_v_a, __pyx_v_b);
+
+  /* function exit code */
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+static PyObject *__pyx_pf_13MathFunctions_4Poly_26min(struct __pyx_obj_13MathFunctions_Poly *__pyx_v_self, double __pyx_v_a, double __pyx_v_b) {
+  PyObject *__pyx_r = NULL;
+  __Pyx_RefNannyDeclarations
+  PyObject *__pyx_t_1 = NULL;
+  int __pyx_lineno = 0;
+  const char *__pyx_filename = NULL;
+  int __pyx_clineno = 0;
+  __Pyx_RefNannySetupContext("min", 0);
+
+  /* "MathFunctions.pyx":137
+ *         return self.poly.max(a, b)
+ *     def min(self, double a, double b):
+ *         return self.poly.min(a, b)             # <<<<<<<<<<<<<<
+ * 
+ *     __rmul__ = __mul__
+ */
+  __Pyx_XDECREF(__pyx_r);
+  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->poly.min(__pyx_v_a, __pyx_v_b)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 137, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_r = __pyx_t_1;
+  __pyx_t_1 = 0;
+  goto __pyx_L0;
+
+  /* "MathFunctions.pyx":136
+ *     def max(self, double a, double b):
+ *         return self.poly.max(a, b)
+ *     def min(self, double a, double b):             # <<<<<<<<<<<<<<
+ *         return self.poly.min(a, b)
+ * 
+ */
+
+  /* function exit code */
+  __pyx_L1_error:;
+  __Pyx_XDECREF(__pyx_t_1);
+  __Pyx_AddTraceback("MathFunctions.Poly.min", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __pyx_r = NULL;
+  __pyx_L0:;
+  __Pyx_XGIVEREF(__pyx_r);
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+/* "MathFunctions.pyx":142
  *     __repr__ = __str__
  * 
  *     def __truediv__(Poly a, double b):             # <<<<<<<<<<<<<<
@@ -3949,8 +4413,8 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_22__mul__(struct 
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_25__truediv__(PyObject *__pyx_v_a, PyObject *__pyx_arg_b); /*proto*/
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_25__truediv__(PyObject *__pyx_v_a, PyObject *__pyx_arg_b) {
+static PyObject *__pyx_pw_13MathFunctions_4Poly_29__truediv__(PyObject *__pyx_v_a, PyObject *__pyx_arg_b); /*proto*/
+static PyObject *__pyx_pw_13MathFunctions_4Poly_29__truediv__(PyObject *__pyx_v_a, PyObject *__pyx_arg_b) {
   double __pyx_v_b;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -3959,16 +4423,16 @@ static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_25__truediv__(PyO
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__truediv__ (wrapper)", 0);
   assert(__pyx_arg_b); {
-    __pyx_v_b = __pyx_PyFloat_AsDouble(__pyx_arg_b); if (unlikely((__pyx_v_b == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 126, __pyx_L3_error)
+    __pyx_v_b = __pyx_PyFloat_AsDouble(__pyx_arg_b); if (unlikely((__pyx_v_b == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 142, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
-  __Pyx_AddTraceback("FunctionsCPP.MathFunctions.Poly.__truediv__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("MathFunctions.Poly.__truediv__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_a), __pyx_ptype_12FunctionsCPP_13MathFunctions_Poly, 1, "a", 0))) __PYX_ERR(1, 126, __pyx_L1_error)
-  __pyx_r = __pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_24__truediv__(((struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *)__pyx_v_a), ((double)__pyx_v_b));
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_a), __pyx_ptype_13MathFunctions_Poly, 1, "a", 0))) __PYX_ERR(1, 142, __pyx_L1_error)
+  __pyx_r = __pyx_pf_13MathFunctions_4Poly_28__truediv__(((struct __pyx_obj_13MathFunctions_Poly *)__pyx_v_a), ((double)__pyx_v_b));
 
   /* function exit code */
   goto __pyx_L0;
@@ -3979,7 +4443,7 @@ static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_25__truediv__(PyO
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_24__truediv__(struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *__pyx_v_a, double __pyx_v_b) {
+static PyObject *__pyx_pf_13MathFunctions_4Poly_28__truediv__(struct __pyx_obj_13MathFunctions_Poly *__pyx_v_a, double __pyx_v_b) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -3988,19 +4452,19 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_24__truediv__(str
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__truediv__", 0);
 
-  /* "FunctionsCPP/MathFunctions.pyx":127
+  /* "MathFunctions.pyx":143
  * 
  *     def __truediv__(Poly a, double b):
  *         return Poly.create(a.poly.div(b))             # <<<<<<<<<<<<<<
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_12FunctionsCPP_13MathFunctions_4Poly_create(__pyx_v_a->poly.operator/(__pyx_v_b)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 127, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_13MathFunctions_4Poly_create(__pyx_v_a->poly.operator/(__pyx_v_b)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 143, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "FunctionsCPP/MathFunctions.pyx":126
+  /* "MathFunctions.pyx":142
  *     __repr__ = __str__
  * 
  *     def __truediv__(Poly a, double b):             # <<<<<<<<<<<<<<
@@ -4010,7 +4474,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_24__truediv__(str
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("FunctionsCPP.MathFunctions.Poly.__truediv__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("MathFunctions.Poly.__truediv__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -4025,19 +4489,19 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_24__truediv__(str
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_27__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_27__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_13MathFunctions_4Poly_31__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_13MathFunctions_4Poly_31__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__reduce_cython__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_26__reduce_cython__(((struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *)__pyx_v_self));
+  __pyx_r = __pyx_pf_13MathFunctions_4Poly_30__reduce_cython__(((struct __pyx_obj_13MathFunctions_Poly *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_26__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *__pyx_v_self) {
+static PyObject *__pyx_pf_13MathFunctions_4Poly_30__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_13MathFunctions_Poly *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -4067,7 +4531,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_26__reduce_cython
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("FunctionsCPP.MathFunctions.Poly.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("MathFunctions.Poly.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
@@ -4082,19 +4546,19 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_26__reduce_cython
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_29__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state); /*proto*/
-static PyObject *__pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_29__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pw_13MathFunctions_4Poly_33__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state); /*proto*/
+static PyObject *__pyx_pw_13MathFunctions_4Poly_33__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__setstate_cython__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_28__setstate_cython__(((struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *)__pyx_v_self), ((PyObject *)__pyx_v___pyx_state));
+  __pyx_r = __pyx_pf_13MathFunctions_4Poly_32__setstate_cython__(((struct __pyx_obj_13MathFunctions_Poly *)__pyx_v_self), ((PyObject *)__pyx_v___pyx_state));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_28__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pf_13MathFunctions_4Poly_32__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_13MathFunctions_Poly *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -4124,7 +4588,7 @@ static PyObject *__pyx_pf_12FunctionsCPP_13MathFunctions_4Poly_28__setstate_cyth
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("FunctionsCPP.MathFunctions.Poly.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("MathFunctions.Poly.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
@@ -4444,10 +4908,10 @@ static CYTHON_INLINE PyObject *__pyx_convert_PyByteArray_string_to_py_std__in_st
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
-static struct __pyx_vtabstruct_12FunctionsCPP_13MathFunctions_StepFunction __pyx_vtable_12FunctionsCPP_13MathFunctions_StepFunction;
+static struct __pyx_vtabstruct_13MathFunctions_StepFunction __pyx_vtable_13MathFunctions_StepFunction;
 
-static PyObject *__pyx_tp_new_12FunctionsCPP_13MathFunctions_StepFunction(PyTypeObject *t, PyObject *a, PyObject *k) {
-  struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *p;
+static PyObject *__pyx_tp_new_13MathFunctions_StepFunction(PyTypeObject *t, PyObject *a, PyObject *k) {
+  struct __pyx_obj_13MathFunctions_StepFunction *p;
   PyObject *o;
   if (likely((t->tp_flags & Py_TPFLAGS_IS_ABSTRACT) == 0)) {
     o = (*t->tp_alloc)(t, 0);
@@ -4455,18 +4919,18 @@ static PyObject *__pyx_tp_new_12FunctionsCPP_13MathFunctions_StepFunction(PyType
     o = (PyObject *) PyBaseObject_Type.tp_new(t, __pyx_empty_tuple, 0);
   }
   if (unlikely(!o)) return 0;
-  p = ((struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *)o);
-  p->__pyx_vtab = __pyx_vtabptr_12FunctionsCPP_13MathFunctions_StepFunction;
+  p = ((struct __pyx_obj_13MathFunctions_StepFunction *)o);
+  p->__pyx_vtab = __pyx_vtabptr_13MathFunctions_StepFunction;
   new((void*)&(p->sf)) Stepfunction();
-  if (unlikely(__pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_1__cinit__(o, a, k) < 0)) goto bad;
+  if (unlikely(__pyx_pw_13MathFunctions_12StepFunction_1__cinit__(o, a, k) < 0)) goto bad;
   return o;
   bad:
   Py_DECREF(o); o = 0;
   return NULL;
 }
 
-static void __pyx_tp_dealloc_12FunctionsCPP_13MathFunctions_StepFunction(PyObject *o) {
-  struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *p = (struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction *)o;
+static void __pyx_tp_dealloc_13MathFunctions_StepFunction(PyObject *o) {
+  struct __pyx_obj_13MathFunctions_StepFunction *p = (struct __pyx_obj_13MathFunctions_StepFunction *)o;
   #if CYTHON_USE_TP_FINALIZE
   if (unlikely(PyType_HasFeature(Py_TYPE(o), Py_TPFLAGS_HAVE_FINALIZE) && Py_TYPE(o)->tp_finalize) && (!PyType_IS_GC(Py_TYPE(o)) || !_PyGC_FINALIZED(o))) {
     if (PyObject_CallFinalizerFromDealloc(o)) return;
@@ -4476,28 +4940,30 @@ static void __pyx_tp_dealloc_12FunctionsCPP_13MathFunctions_StepFunction(PyObjec
   (*Py_TYPE(o)->tp_free)(o);
 }
 
-static PyMethodDef __pyx_methods_12FunctionsCPP_13MathFunctions_StepFunction[] = {
-  {"push", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_3push, METH_VARARGS|METH_KEYWORDS, 0},
-  {"print", (PyCFunction)__pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_5print, METH_NOARGS, 0},
-  {"derivative", (PyCFunction)__pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_13derivative, METH_NOARGS, 0},
-  {"integral", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_15integral, METH_VARARGS|METH_KEYWORDS, 0},
-  {"__rsub__", (PyCFunction)__pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_21__rsub__, METH_O, 0},
-  {"__reduce_cython__", (PyCFunction)__pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_27__reduce_cython__, METH_NOARGS, 0},
-  {"__setstate_cython__", (PyCFunction)__pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_29__setstate_cython__, METH_O, 0},
+static PyMethodDef __pyx_methods_13MathFunctions_StepFunction[] = {
+  {"push", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_13MathFunctions_12StepFunction_3push, METH_VARARGS|METH_KEYWORDS, 0},
+  {"print", (PyCFunction)__pyx_pw_13MathFunctions_12StepFunction_5print, METH_NOARGS, 0},
+  {"derivative", (PyCFunction)__pyx_pw_13MathFunctions_12StepFunction_13derivative, METH_NOARGS, 0},
+  {"integral", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_13MathFunctions_12StepFunction_15integral, METH_VARARGS|METH_KEYWORDS, 0},
+  {"__rsub__", (PyCFunction)__pyx_pw_13MathFunctions_12StepFunction_21__rsub__, METH_O, 0},
+  {"max", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_13MathFunctions_12StepFunction_25max, METH_VARARGS|METH_KEYWORDS, 0},
+  {"min", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_13MathFunctions_12StepFunction_27min, METH_VARARGS|METH_KEYWORDS, 0},
+  {"__reduce_cython__", (PyCFunction)__pyx_pw_13MathFunctions_12StepFunction_31__reduce_cython__, METH_NOARGS, 0},
+  {"__setstate_cython__", (PyCFunction)__pyx_pw_13MathFunctions_12StepFunction_33__setstate_cython__, METH_O, 0},
   {0, 0, 0, 0}
 };
 
 static PyNumberMethods __pyx_tp_as_number_StepFunction = {
-  __pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_11__add__, /*nb_add*/
-  __pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_19__sub__, /*nb_subtract*/
-  __pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_23__mul__, /*nb_multiply*/
+  __pyx_pw_13MathFunctions_12StepFunction_11__add__, /*nb_add*/
+  __pyx_pw_13MathFunctions_12StepFunction_19__sub__, /*nb_subtract*/
+  __pyx_pw_13MathFunctions_12StepFunction_23__mul__, /*nb_multiply*/
   #if PY_MAJOR_VERSION < 3 || (CYTHON_COMPILING_IN_PYPY && PY_VERSION_HEX < 0x03050000)
   0, /*nb_divide*/
   #endif
   0, /*nb_remainder*/
   0, /*nb_divmod*/
   0, /*nb_power*/
-  __pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_17__neg__, /*nb_negative*/
+  __pyx_pw_13MathFunctions_12StepFunction_17__neg__, /*nb_negative*/
   0, /*nb_positive*/
   0, /*nb_absolute*/
   0, /*nb_nonzero*/
@@ -4537,7 +5003,7 @@ static PyNumberMethods __pyx_tp_as_number_StepFunction = {
   0, /*nb_inplace_xor*/
   0, /*nb_inplace_or*/
   0, /*nb_floor_divide*/
-  __pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_25__truediv__, /*nb_true_divide*/
+  __pyx_pw_13MathFunctions_12StepFunction_29__truediv__, /*nb_true_divide*/
   0, /*nb_inplace_floor_divide*/
   0, /*nb_inplace_true_divide*/
   0, /*nb_index*/
@@ -4549,12 +5015,12 @@ static PyNumberMethods __pyx_tp_as_number_StepFunction = {
   #endif
 };
 
-static PyTypeObject __pyx_type_12FunctionsCPP_13MathFunctions_StepFunction = {
+static PyTypeObject __pyx_type_13MathFunctions_StepFunction = {
   PyVarObject_HEAD_INIT(0, 0)
-  "FunctionsCPP.MathFunctions.StepFunction", /*tp_name*/
-  sizeof(struct __pyx_obj_12FunctionsCPP_13MathFunctions_StepFunction), /*tp_basicsize*/
+  "MathFunctions.StepFunction", /*tp_name*/
+  sizeof(struct __pyx_obj_13MathFunctions_StepFunction), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_12FunctionsCPP_13MathFunctions_StepFunction, /*tp_dealloc*/
+  __pyx_tp_dealloc_13MathFunctions_StepFunction, /*tp_dealloc*/
   #if PY_VERSION_HEX < 0x030800b4
   0, /*tp_print*/
   #endif
@@ -4574,8 +5040,8 @@ static PyTypeObject __pyx_type_12FunctionsCPP_13MathFunctions_StepFunction = {
   0, /*tp_as_sequence*/
   0, /*tp_as_mapping*/
   0, /*tp_hash*/
-  __pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_7__call__, /*tp_call*/
-  __pyx_pw_12FunctionsCPP_13MathFunctions_12StepFunction_9__str__, /*tp_str*/
+  __pyx_pw_13MathFunctions_12StepFunction_7__call__, /*tp_call*/
+  __pyx_pw_13MathFunctions_12StepFunction_9__str__, /*tp_str*/
   0, /*tp_getattro*/
   0, /*tp_setattro*/
   0, /*tp_as_buffer*/
@@ -4587,7 +5053,7 @@ static PyTypeObject __pyx_type_12FunctionsCPP_13MathFunctions_StepFunction = {
   0, /*tp_weaklistoffset*/
   0, /*tp_iter*/
   0, /*tp_iternext*/
-  __pyx_methods_12FunctionsCPP_13MathFunctions_StepFunction, /*tp_methods*/
+  __pyx_methods_13MathFunctions_StepFunction, /*tp_methods*/
   0, /*tp_members*/
   0, /*tp_getset*/
   0, /*tp_base*/
@@ -4597,7 +5063,7 @@ static PyTypeObject __pyx_type_12FunctionsCPP_13MathFunctions_StepFunction = {
   0, /*tp_dictoffset*/
   0, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_12FunctionsCPP_13MathFunctions_StepFunction, /*tp_new*/
+  __pyx_tp_new_13MathFunctions_StepFunction, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -4617,10 +5083,10 @@ static PyTypeObject __pyx_type_12FunctionsCPP_13MathFunctions_StepFunction = {
   0, /*tp_print*/
   #endif
 };
-static struct __pyx_vtabstruct_12FunctionsCPP_13MathFunctions_Poly __pyx_vtable_12FunctionsCPP_13MathFunctions_Poly;
+static struct __pyx_vtabstruct_13MathFunctions_Poly __pyx_vtable_13MathFunctions_Poly;
 
-static PyObject *__pyx_tp_new_12FunctionsCPP_13MathFunctions_Poly(PyTypeObject *t, PyObject *a, PyObject *k) {
-  struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *p;
+static PyObject *__pyx_tp_new_13MathFunctions_Poly(PyTypeObject *t, PyObject *a, PyObject *k) {
+  struct __pyx_obj_13MathFunctions_Poly *p;
   PyObject *o;
   if (likely((t->tp_flags & Py_TPFLAGS_IS_ABSTRACT) == 0)) {
     o = (*t->tp_alloc)(t, 0);
@@ -4628,18 +5094,18 @@ static PyObject *__pyx_tp_new_12FunctionsCPP_13MathFunctions_Poly(PyTypeObject *
     o = (PyObject *) PyBaseObject_Type.tp_new(t, __pyx_empty_tuple, 0);
   }
   if (unlikely(!o)) return 0;
-  p = ((struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *)o);
-  p->__pyx_vtab = __pyx_vtabptr_12FunctionsCPP_13MathFunctions_Poly;
+  p = ((struct __pyx_obj_13MathFunctions_Poly *)o);
+  p->__pyx_vtab = __pyx_vtabptr_13MathFunctions_Poly;
   new((void*)&(p->poly)) Polynomial();
-  if (unlikely(__pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_1__cinit__(o, a, k) < 0)) goto bad;
+  if (unlikely(__pyx_pw_13MathFunctions_4Poly_1__cinit__(o, a, k) < 0)) goto bad;
   return o;
   bad:
   Py_DECREF(o); o = 0;
   return NULL;
 }
 
-static void __pyx_tp_dealloc_12FunctionsCPP_13MathFunctions_Poly(PyObject *o) {
-  struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *p = (struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly *)o;
+static void __pyx_tp_dealloc_13MathFunctions_Poly(PyObject *o) {
+  struct __pyx_obj_13MathFunctions_Poly *p = (struct __pyx_obj_13MathFunctions_Poly *)o;
   #if CYTHON_USE_TP_FINALIZE
   if (unlikely(PyType_HasFeature(Py_TYPE(o), Py_TPFLAGS_HAVE_FINALIZE) && Py_TYPE(o)->tp_finalize) && (!PyType_IS_GC(Py_TYPE(o)) || !_PyGC_FINALIZED(o))) {
     if (PyObject_CallFinalizerFromDealloc(o)) return;
@@ -4649,28 +5115,30 @@ static void __pyx_tp_dealloc_12FunctionsCPP_13MathFunctions_Poly(PyObject *o) {
   (*Py_TYPE(o)->tp_free)(o);
 }
 
-static PyMethodDef __pyx_methods_12FunctionsCPP_13MathFunctions_Poly[] = {
-  {"push", (PyCFunction)__pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_3push, METH_O, 0},
-  {"print", (PyCFunction)__pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_5print, METH_NOARGS, 0},
-  {"derivative", (PyCFunction)__pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_13derivative, METH_NOARGS, 0},
-  {"integral", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_15integral, METH_VARARGS|METH_KEYWORDS, 0},
-  {"__rsub__", (PyCFunction)__pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_21__rsub__, METH_O, 0},
-  {"__reduce_cython__", (PyCFunction)__pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_27__reduce_cython__, METH_NOARGS, 0},
-  {"__setstate_cython__", (PyCFunction)__pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_29__setstate_cython__, METH_O, 0},
+static PyMethodDef __pyx_methods_13MathFunctions_Poly[] = {
+  {"push", (PyCFunction)__pyx_pw_13MathFunctions_4Poly_3push, METH_O, 0},
+  {"print", (PyCFunction)__pyx_pw_13MathFunctions_4Poly_5print, METH_NOARGS, 0},
+  {"derivative", (PyCFunction)__pyx_pw_13MathFunctions_4Poly_13derivative, METH_NOARGS, 0},
+  {"integral", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_13MathFunctions_4Poly_15integral, METH_VARARGS|METH_KEYWORDS, 0},
+  {"__rsub__", (PyCFunction)__pyx_pw_13MathFunctions_4Poly_21__rsub__, METH_O, 0},
+  {"max", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_13MathFunctions_4Poly_25max, METH_VARARGS|METH_KEYWORDS, 0},
+  {"min", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_13MathFunctions_4Poly_27min, METH_VARARGS|METH_KEYWORDS, 0},
+  {"__reduce_cython__", (PyCFunction)__pyx_pw_13MathFunctions_4Poly_31__reduce_cython__, METH_NOARGS, 0},
+  {"__setstate_cython__", (PyCFunction)__pyx_pw_13MathFunctions_4Poly_33__setstate_cython__, METH_O, 0},
   {0, 0, 0, 0}
 };
 
 static PyNumberMethods __pyx_tp_as_number_Poly = {
-  __pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_11__add__, /*nb_add*/
-  __pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_19__sub__, /*nb_subtract*/
-  __pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_23__mul__, /*nb_multiply*/
+  __pyx_pw_13MathFunctions_4Poly_11__add__, /*nb_add*/
+  __pyx_pw_13MathFunctions_4Poly_19__sub__, /*nb_subtract*/
+  __pyx_pw_13MathFunctions_4Poly_23__mul__, /*nb_multiply*/
   #if PY_MAJOR_VERSION < 3 || (CYTHON_COMPILING_IN_PYPY && PY_VERSION_HEX < 0x03050000)
   0, /*nb_divide*/
   #endif
   0, /*nb_remainder*/
   0, /*nb_divmod*/
   0, /*nb_power*/
-  __pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_17__neg__, /*nb_negative*/
+  __pyx_pw_13MathFunctions_4Poly_17__neg__, /*nb_negative*/
   0, /*nb_positive*/
   0, /*nb_absolute*/
   0, /*nb_nonzero*/
@@ -4710,7 +5178,7 @@ static PyNumberMethods __pyx_tp_as_number_Poly = {
   0, /*nb_inplace_xor*/
   0, /*nb_inplace_or*/
   0, /*nb_floor_divide*/
-  __pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_25__truediv__, /*nb_true_divide*/
+  __pyx_pw_13MathFunctions_4Poly_29__truediv__, /*nb_true_divide*/
   0, /*nb_inplace_floor_divide*/
   0, /*nb_inplace_true_divide*/
   0, /*nb_index*/
@@ -4722,12 +5190,12 @@ static PyNumberMethods __pyx_tp_as_number_Poly = {
   #endif
 };
 
-static PyTypeObject __pyx_type_12FunctionsCPP_13MathFunctions_Poly = {
+static PyTypeObject __pyx_type_13MathFunctions_Poly = {
   PyVarObject_HEAD_INIT(0, 0)
-  "FunctionsCPP.MathFunctions.Poly", /*tp_name*/
-  sizeof(struct __pyx_obj_12FunctionsCPP_13MathFunctions_Poly), /*tp_basicsize*/
+  "MathFunctions.Poly", /*tp_name*/
+  sizeof(struct __pyx_obj_13MathFunctions_Poly), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_12FunctionsCPP_13MathFunctions_Poly, /*tp_dealloc*/
+  __pyx_tp_dealloc_13MathFunctions_Poly, /*tp_dealloc*/
   #if PY_VERSION_HEX < 0x030800b4
   0, /*tp_print*/
   #endif
@@ -4747,8 +5215,8 @@ static PyTypeObject __pyx_type_12FunctionsCPP_13MathFunctions_Poly = {
   0, /*tp_as_sequence*/
   0, /*tp_as_mapping*/
   0, /*tp_hash*/
-  __pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_7__call__, /*tp_call*/
-  __pyx_pw_12FunctionsCPP_13MathFunctions_4Poly_9__str__, /*tp_str*/
+  __pyx_pw_13MathFunctions_4Poly_7__call__, /*tp_call*/
+  __pyx_pw_13MathFunctions_4Poly_9__str__, /*tp_str*/
   0, /*tp_getattro*/
   0, /*tp_setattro*/
   0, /*tp_as_buffer*/
@@ -4760,7 +5228,7 @@ static PyTypeObject __pyx_type_12FunctionsCPP_13MathFunctions_Poly = {
   0, /*tp_weaklistoffset*/
   0, /*tp_iter*/
   0, /*tp_iternext*/
-  __pyx_methods_12FunctionsCPP_13MathFunctions_Poly, /*tp_methods*/
+  __pyx_methods_13MathFunctions_Poly, /*tp_methods*/
   0, /*tp_members*/
   0, /*tp_getset*/
   0, /*tp_base*/
@@ -4770,7 +5238,7 @@ static PyTypeObject __pyx_type_12FunctionsCPP_13MathFunctions_Poly = {
   0, /*tp_dictoffset*/
   0, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_12FunctionsCPP_13MathFunctions_Poly, /*tp_new*/
+  __pyx_tp_new_13MathFunctions_Poly, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -4841,8 +5309,10 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_Poly, __pyx_k_Poly, sizeof(__pyx_k_Poly), 0, 0, 1, 1},
   {&__pyx_n_s_StepFunction, __pyx_k_StepFunction, sizeof(__pyx_k_StepFunction), 0, 0, 1, 1},
   {&__pyx_n_s_TypeError, __pyx_k_TypeError, sizeof(__pyx_k_TypeError), 0, 0, 1, 1},
+  {&__pyx_n_s_a, __pyx_k_a, sizeof(__pyx_k_a), 0, 0, 1, 1},
   {&__pyx_n_s_add, __pyx_k_add, sizeof(__pyx_k_add), 0, 0, 1, 1},
   {&__pyx_n_s_arr, __pyx_k_arr, sizeof(__pyx_k_arr), 0, 0, 1, 1},
+  {&__pyx_n_s_b, __pyx_k_b, sizeof(__pyx_k_b), 0, 0, 1, 1},
   {&__pyx_n_s_cline_in_traceback, __pyx_k_cline_in_traceback, sizeof(__pyx_k_cline_in_traceback), 0, 0, 1, 1},
   {&__pyx_n_s_coef, __pyx_k_coef, sizeof(__pyx_k_coef), 0, 0, 1, 1},
   {&__pyx_n_s_exp, __pyx_k_exp, sizeof(__pyx_k_exp), 0, 0, 1, 1},
@@ -4971,32 +5441,32 @@ static int __Pyx_modinit_type_init_code(void) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__Pyx_modinit_type_init_code", 0);
   /*--- Type init code ---*/
-  __pyx_vtabptr_12FunctionsCPP_13MathFunctions_StepFunction = &__pyx_vtable_12FunctionsCPP_13MathFunctions_StepFunction;
-  __pyx_vtable_12FunctionsCPP_13MathFunctions_StepFunction.create = (PyObject *(*)(Stepfunction))__pyx_f_12FunctionsCPP_13MathFunctions_12StepFunction_create;
-  if (PyType_Ready(&__pyx_type_12FunctionsCPP_13MathFunctions_StepFunction) < 0) __PYX_ERR(1, 36, __pyx_L1_error)
+  __pyx_vtabptr_13MathFunctions_StepFunction = &__pyx_vtable_13MathFunctions_StepFunction;
+  __pyx_vtable_13MathFunctions_StepFunction.create = (PyObject *(*)(Stepfunction))__pyx_f_13MathFunctions_12StepFunction_create;
+  if (PyType_Ready(&__pyx_type_13MathFunctions_StepFunction) < 0) __PYX_ERR(1, 42, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
-  __pyx_type_12FunctionsCPP_13MathFunctions_StepFunction.tp_print = 0;
+  __pyx_type_13MathFunctions_StepFunction.tp_print = 0;
   #endif
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_12FunctionsCPP_13MathFunctions_StepFunction.tp_dictoffset && __pyx_type_12FunctionsCPP_13MathFunctions_StepFunction.tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_type_12FunctionsCPP_13MathFunctions_StepFunction.tp_getattro = __Pyx_PyObject_GenericGetAttr;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_13MathFunctions_StepFunction.tp_dictoffset && __pyx_type_13MathFunctions_StepFunction.tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_type_13MathFunctions_StepFunction.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_12FunctionsCPP_13MathFunctions_StepFunction.tp_dict, __pyx_vtabptr_12FunctionsCPP_13MathFunctions_StepFunction) < 0) __PYX_ERR(1, 36, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_StepFunction, (PyObject *)&__pyx_type_12FunctionsCPP_13MathFunctions_StepFunction) < 0) __PYX_ERR(1, 36, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_12FunctionsCPP_13MathFunctions_StepFunction) < 0) __PYX_ERR(1, 36, __pyx_L1_error)
-  __pyx_ptype_12FunctionsCPP_13MathFunctions_StepFunction = &__pyx_type_12FunctionsCPP_13MathFunctions_StepFunction;
-  __pyx_vtabptr_12FunctionsCPP_13MathFunctions_Poly = &__pyx_vtable_12FunctionsCPP_13MathFunctions_Poly;
-  __pyx_vtable_12FunctionsCPP_13MathFunctions_Poly.create = (PyObject *(*)(Polynomial))__pyx_f_12FunctionsCPP_13MathFunctions_4Poly_create;
-  if (PyType_Ready(&__pyx_type_12FunctionsCPP_13MathFunctions_Poly) < 0) __PYX_ERR(1, 83, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_13MathFunctions_StepFunction.tp_dict, __pyx_vtabptr_13MathFunctions_StepFunction) < 0) __PYX_ERR(1, 42, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_StepFunction, (PyObject *)&__pyx_type_13MathFunctions_StepFunction) < 0) __PYX_ERR(1, 42, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_13MathFunctions_StepFunction) < 0) __PYX_ERR(1, 42, __pyx_L1_error)
+  __pyx_ptype_13MathFunctions_StepFunction = &__pyx_type_13MathFunctions_StepFunction;
+  __pyx_vtabptr_13MathFunctions_Poly = &__pyx_vtable_13MathFunctions_Poly;
+  __pyx_vtable_13MathFunctions_Poly.create = (PyObject *(*)(Polynomial))__pyx_f_13MathFunctions_4Poly_create;
+  if (PyType_Ready(&__pyx_type_13MathFunctions_Poly) < 0) __PYX_ERR(1, 94, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
-  __pyx_type_12FunctionsCPP_13MathFunctions_Poly.tp_print = 0;
+  __pyx_type_13MathFunctions_Poly.tp_print = 0;
   #endif
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_12FunctionsCPP_13MathFunctions_Poly.tp_dictoffset && __pyx_type_12FunctionsCPP_13MathFunctions_Poly.tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_type_12FunctionsCPP_13MathFunctions_Poly.tp_getattro = __Pyx_PyObject_GenericGetAttr;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_13MathFunctions_Poly.tp_dictoffset && __pyx_type_13MathFunctions_Poly.tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_type_13MathFunctions_Poly.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_12FunctionsCPP_13MathFunctions_Poly.tp_dict, __pyx_vtabptr_12FunctionsCPP_13MathFunctions_Poly) < 0) __PYX_ERR(1, 83, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_Poly, (PyObject *)&__pyx_type_12FunctionsCPP_13MathFunctions_Poly) < 0) __PYX_ERR(1, 83, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_12FunctionsCPP_13MathFunctions_Poly) < 0) __PYX_ERR(1, 83, __pyx_L1_error)
-  __pyx_ptype_12FunctionsCPP_13MathFunctions_Poly = &__pyx_type_12FunctionsCPP_13MathFunctions_Poly;
+  if (__Pyx_SetVtable(__pyx_type_13MathFunctions_Poly.tp_dict, __pyx_vtabptr_13MathFunctions_Poly) < 0) __PYX_ERR(1, 94, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_Poly, (PyObject *)&__pyx_type_13MathFunctions_Poly) < 0) __PYX_ERR(1, 94, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_13MathFunctions_Poly) < 0) __PYX_ERR(1, 94, __pyx_L1_error)
+  __pyx_ptype_13MathFunctions_Poly = &__pyx_type_13MathFunctions_Poly;
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -5203,14 +5673,14 @@ if (!__Pyx_RefNanny) {
   #if PY_MAJOR_VERSION < 3 && (__PYX_DEFAULT_STRING_ENCODING_IS_ASCII || __PYX_DEFAULT_STRING_ENCODING_IS_DEFAULT)
   if (__Pyx_init_sys_getdefaultencoding_params() < 0) __PYX_ERR(1, 1, __pyx_L1_error)
   #endif
-  if (__pyx_module_is_main_FunctionsCPP__MathFunctions) {
+  if (__pyx_module_is_main_MathFunctions) {
     if (PyObject_SetAttr(__pyx_m, __pyx_n_s_name, __pyx_n_s_main) < 0) __PYX_ERR(1, 1, __pyx_L1_error)
   }
   #if PY_MAJOR_VERSION >= 3
   {
     PyObject *modules = PyImport_GetModuleDict(); if (unlikely(!modules)) __PYX_ERR(1, 1, __pyx_L1_error)
-    if (!PyDict_GetItemString(modules, "FunctionsCPP.MathFunctions")) {
-      if (unlikely(PyDict_SetItemString(modules, "FunctionsCPP.MathFunctions", __pyx_m) < 0)) __PYX_ERR(1, 1, __pyx_L1_error)
+    if (!PyDict_GetItemString(modules, "MathFunctions")) {
+      if (unlikely(PyDict_SetItemString(modules, "MathFunctions", __pyx_m) < 0)) __PYX_ERR(1, 1, __pyx_L1_error)
     }
   }
   #endif
@@ -5231,14 +5701,14 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(1, 1, __pyx_L1_error)
   #endif
 
-  /* "FunctionsCPP/MathFunctions.pyx":38
+  /* "MathFunctions.pyx":44
  * cdef class StepFunction:
  *     cdef Stepfunction sf
  *     def __cinit__(self, list arr = [[0]*3], str symbol = "z"):             # <<<<<<<<<<<<<<
  *         self.sf = Stepfunction(symbol.encode())
  *         for c, r, e in arr:
  */
-  __pyx_t_1 = PyList_New(1 * 3); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 38, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(1 * 3); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 44, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   { Py_ssize_t __pyx_temp;
     for (__pyx_temp=0; __pyx_temp < 3; __pyx_temp++) {
@@ -5247,7 +5717,7 @@ if (!__Pyx_RefNanny) {
       PyList_SET_ITEM(__pyx_t_1, __pyx_temp, __pyx_int_0);
     }
   }
-  __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 38, __pyx_L1_error)
+  __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 44, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_GIVEREF(__pyx_t_1);
   PyList_SET_ITEM(__pyx_t_2, 0, __pyx_t_1);
@@ -5256,111 +5726,111 @@ if (!__Pyx_RefNanny) {
   __Pyx_GIVEREF(__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "FunctionsCPP/MathFunctions.pyx":50
+  /* "MathFunctions.pyx":56
  *     def __str__(self):
  *         return self.sf.str().decode('utf-8')
  *     __repr__ = __str__             # <<<<<<<<<<<<<<
  * 
  *     @staticmethod
  */
-  __Pyx_GetNameInClass(__pyx_t_2, (PyObject *)__pyx_ptype_12FunctionsCPP_13MathFunctions_StepFunction, __pyx_n_s_str); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 50, __pyx_L1_error)
+  __Pyx_GetNameInClass(__pyx_t_2, (PyObject *)__pyx_ptype_13MathFunctions_StepFunction, __pyx_n_s_str); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 56, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem((PyObject *)__pyx_ptype_12FunctionsCPP_13MathFunctions_StepFunction->tp_dict, __pyx_n_s_repr, __pyx_t_2) < 0) __PYX_ERR(1, 50, __pyx_L1_error)
+  if (PyDict_SetItem((PyObject *)__pyx_ptype_13MathFunctions_StepFunction->tp_dict, __pyx_n_s_repr, __pyx_t_2) < 0) __PYX_ERR(1, 56, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  PyType_Modified(__pyx_ptype_12FunctionsCPP_13MathFunctions_StepFunction);
+  PyType_Modified(__pyx_ptype_13MathFunctions_StepFunction);
 
-  /* "FunctionsCPP/MathFunctions.pyx":61
+  /* "MathFunctions.pyx":67
  *         return StepFunction.create(left.sf + right.sf)
  * 
  *     __radd__ = __add__             # <<<<<<<<<<<<<<
  * 
  *     def derivative(self):
  */
-  __Pyx_GetNameInClass(__pyx_t_2, (PyObject *)__pyx_ptype_12FunctionsCPP_13MathFunctions_StepFunction, __pyx_n_s_add); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 61, __pyx_L1_error)
+  __Pyx_GetNameInClass(__pyx_t_2, (PyObject *)__pyx_ptype_13MathFunctions_StepFunction, __pyx_n_s_add); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 67, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem((PyObject *)__pyx_ptype_12FunctionsCPP_13MathFunctions_StepFunction->tp_dict, __pyx_n_s_radd, __pyx_t_2) < 0) __PYX_ERR(1, 61, __pyx_L1_error)
+  if (PyDict_SetItem((PyObject *)__pyx_ptype_13MathFunctions_StepFunction->tp_dict, __pyx_n_s_radd, __pyx_t_2) < 0) __PYX_ERR(1, 67, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  PyType_Modified(__pyx_ptype_12FunctionsCPP_13MathFunctions_StepFunction);
+  PyType_Modified(__pyx_ptype_13MathFunctions_StepFunction);
 
-  /* "FunctionsCPP/MathFunctions.pyx":78
+  /* "MathFunctions.pyx":84
  *     def __mul__(StepFunction a, double b):
- *         return StepFunction.create(a.sf.div(b))
+ *         return StepFunction.create(a.sf.mul(b))
  *     __rmul__ = __mul__             # <<<<<<<<<<<<<<
  * 
- *     def __truediv__(StepFunction a, double b):
+ *     def max(self, double a, double b):
  */
-  __Pyx_GetNameInClass(__pyx_t_2, (PyObject *)__pyx_ptype_12FunctionsCPP_13MathFunctions_StepFunction, __pyx_n_s_mul); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 78, __pyx_L1_error)
+  __Pyx_GetNameInClass(__pyx_t_2, (PyObject *)__pyx_ptype_13MathFunctions_StepFunction, __pyx_n_s_mul); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 84, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem((PyObject *)__pyx_ptype_12FunctionsCPP_13MathFunctions_StepFunction->tp_dict, __pyx_n_s_rmul, __pyx_t_2) < 0) __PYX_ERR(1, 78, __pyx_L1_error)
+  if (PyDict_SetItem((PyObject *)__pyx_ptype_13MathFunctions_StepFunction->tp_dict, __pyx_n_s_rmul, __pyx_t_2) < 0) __PYX_ERR(1, 84, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  PyType_Modified(__pyx_ptype_12FunctionsCPP_13MathFunctions_StepFunction);
+  PyType_Modified(__pyx_ptype_13MathFunctions_StepFunction);
 
-  /* "FunctionsCPP/MathFunctions.pyx":85
+  /* "MathFunctions.pyx":96
  * cdef class Poly:
  *     cdef Polynomial poly
  *     def __cinit__(self, list arr = [], double freq = 1, double coef = 1, str symbol = "z"):             # <<<<<<<<<<<<<<
  *         self.poly = Polynomial(freq, coef, symbol.encode())
  *         for t in arr:
  */
-  __pyx_t_2 = PyList_New(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 85, __pyx_L1_error)
+  __pyx_t_2 = PyList_New(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 96, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_k__4 = ((PyObject*)__pyx_t_2);
   __Pyx_GIVEREF(__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "FunctionsCPP/MathFunctions.pyx":97
+  /* "MathFunctions.pyx":108
  *     def __str__(self):
  *         return self.poly.str().decode('utf-8')
  *     __repr__ = __str__             # <<<<<<<<<<<<<<
  * 
  *     @staticmethod
  */
-  __Pyx_GetNameInClass(__pyx_t_2, (PyObject *)__pyx_ptype_12FunctionsCPP_13MathFunctions_Poly, __pyx_n_s_str); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 97, __pyx_L1_error)
+  __Pyx_GetNameInClass(__pyx_t_2, (PyObject *)__pyx_ptype_13MathFunctions_Poly, __pyx_n_s_str); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 108, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem((PyObject *)__pyx_ptype_12FunctionsCPP_13MathFunctions_Poly->tp_dict, __pyx_n_s_repr, __pyx_t_2) < 0) __PYX_ERR(1, 97, __pyx_L1_error)
+  if (PyDict_SetItem((PyObject *)__pyx_ptype_13MathFunctions_Poly->tp_dict, __pyx_n_s_repr, __pyx_t_2) < 0) __PYX_ERR(1, 108, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  PyType_Modified(__pyx_ptype_12FunctionsCPP_13MathFunctions_Poly);
+  PyType_Modified(__pyx_ptype_13MathFunctions_Poly);
 
-  /* "FunctionsCPP/MathFunctions.pyx":108
+  /* "MathFunctions.pyx":119
  *         return Poly.create(left.poly + right.poly)
  * 
  *     __radd__ = __add__             # <<<<<<<<<<<<<<
  * 
  *     def derivative(self):
  */
-  __Pyx_GetNameInClass(__pyx_t_2, (PyObject *)__pyx_ptype_12FunctionsCPP_13MathFunctions_Poly, __pyx_n_s_add); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 108, __pyx_L1_error)
+  __Pyx_GetNameInClass(__pyx_t_2, (PyObject *)__pyx_ptype_13MathFunctions_Poly, __pyx_n_s_add); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 119, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem((PyObject *)__pyx_ptype_12FunctionsCPP_13MathFunctions_Poly->tp_dict, __pyx_n_s_radd, __pyx_t_2) < 0) __PYX_ERR(1, 108, __pyx_L1_error)
+  if (PyDict_SetItem((PyObject *)__pyx_ptype_13MathFunctions_Poly->tp_dict, __pyx_n_s_radd, __pyx_t_2) < 0) __PYX_ERR(1, 119, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  PyType_Modified(__pyx_ptype_12FunctionsCPP_13MathFunctions_Poly);
+  PyType_Modified(__pyx_ptype_13MathFunctions_Poly);
 
-  /* "FunctionsCPP/MathFunctions.pyx":123
- *     def __mul__(Poly a, double b):
- *         return Poly.create(a.poly.div(b))
+  /* "MathFunctions.pyx":139
+ *         return self.poly.min(a, b)
+ * 
  *     __rmul__ = __mul__             # <<<<<<<<<<<<<<
  *     __repr__ = __str__
  * 
  */
-  __Pyx_GetNameInClass(__pyx_t_2, (PyObject *)__pyx_ptype_12FunctionsCPP_13MathFunctions_Poly, __pyx_n_s_mul); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 123, __pyx_L1_error)
+  __Pyx_GetNameInClass(__pyx_t_2, (PyObject *)__pyx_ptype_13MathFunctions_Poly, __pyx_n_s_mul); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 139, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem((PyObject *)__pyx_ptype_12FunctionsCPP_13MathFunctions_Poly->tp_dict, __pyx_n_s_rmul, __pyx_t_2) < 0) __PYX_ERR(1, 123, __pyx_L1_error)
+  if (PyDict_SetItem((PyObject *)__pyx_ptype_13MathFunctions_Poly->tp_dict, __pyx_n_s_rmul, __pyx_t_2) < 0) __PYX_ERR(1, 139, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  PyType_Modified(__pyx_ptype_12FunctionsCPP_13MathFunctions_Poly);
+  PyType_Modified(__pyx_ptype_13MathFunctions_Poly);
 
-  /* "FunctionsCPP/MathFunctions.pyx":124
- *         return Poly.create(a.poly.div(b))
+  /* "MathFunctions.pyx":140
+ * 
  *     __rmul__ = __mul__
  *     __repr__ = __str__             # <<<<<<<<<<<<<<
  * 
  *     def __truediv__(Poly a, double b):
  */
-  __Pyx_GetNameInClass(__pyx_t_2, (PyObject *)__pyx_ptype_12FunctionsCPP_13MathFunctions_Poly, __pyx_n_s_str); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 124, __pyx_L1_error)
+  __Pyx_GetNameInClass(__pyx_t_2, (PyObject *)__pyx_ptype_13MathFunctions_Poly, __pyx_n_s_str); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 140, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem((PyObject *)__pyx_ptype_12FunctionsCPP_13MathFunctions_Poly->tp_dict, __pyx_n_s_repr, __pyx_t_2) < 0) __PYX_ERR(1, 124, __pyx_L1_error)
+  if (PyDict_SetItem((PyObject *)__pyx_ptype_13MathFunctions_Poly->tp_dict, __pyx_n_s_repr, __pyx_t_2) < 0) __PYX_ERR(1, 140, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  PyType_Modified(__pyx_ptype_12FunctionsCPP_13MathFunctions_Poly);
+  PyType_Modified(__pyx_ptype_13MathFunctions_Poly);
 
-  /* "FunctionsCPP/MathFunctions.pyx":1
+  /* "MathFunctions.pyx":1
  * # distutils: language = c++             # <<<<<<<<<<<<<<
  * from libcpp.string cimport string
  * 
@@ -5386,11 +5856,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_XDECREF(__pyx_t_2);
   if (__pyx_m) {
     if (__pyx_d) {
-      __Pyx_AddTraceback("init FunctionsCPP.MathFunctions", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("init MathFunctions", __pyx_clineno, __pyx_lineno, __pyx_filename);
     }
     Py_CLEAR(__pyx_m);
   } else if (!PyErr_Occurred()) {
-    PyErr_SetString(PyExc_ImportError, "init FunctionsCPP.MathFunctions");
+    PyErr_SetString(PyExc_ImportError, "init MathFunctions");
   }
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
