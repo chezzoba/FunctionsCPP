@@ -37,7 +37,7 @@ struct Stepfunction {
         double operator()(double x) {
             double sum = 0;
             for (int i=0; i<c.size; i++) {
-                sum += c[i] * (x <= r[i] ? 0 : pow(x - r[i], e[i]));
+                sum += c[i] * (x < r[i] ? 0 : pow(x - r[i], e[i]));
             };
             return sum;
         };
